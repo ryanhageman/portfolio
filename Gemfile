@@ -21,3 +21,7 @@ gem "solargraph", "~> 0.5"
 gem "solargraph-standardrb", ">= 0.0.4"
 gem "standard", "~> 1.39"
 gem "rubocop", "~> 1.64.0"
+
+# ─────────────────────────────── My Stuff ───────────────────────────────
+
+gem "middleman-livereload"
