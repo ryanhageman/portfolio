@@ -25,3 +25,4 @@ gem "rubocop", "~> 1.64.0"
 # ─────────────────────────────── My Stuff ───────────────────────────────
 
 gem "middleman-livereload"
+gem "slim", "~>4.0"

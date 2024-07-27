@@ -170,6 +170,9 @@ GEM
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
+    slim (4.1.0)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
     solargraph (0.50.0)
       backport (~> 1.2)
       benchmark
@@ -202,7 +205,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.21.0)
     strscan (3.1.0)
-    temple (0.10.3)
+    temple (0.8.2)
     terser (1.2.3)
       execjs (>= 0.3.0, < 3)
     thor (1.2.2)
@@ -239,6 +242,7 @@ DEPENDENCIES
   middleman-livereload
   mutex_m
   rubocop (~> 1.64.0)
+  slim (~> 4.0)
   solargraph (~> 0.5)
   solargraph-standardrb (>= 0.0.4)
   standard (~> 1.39)
