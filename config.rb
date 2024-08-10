@@ -17,7 +17,12 @@ page "/*.txt", layout: false
 
 # ──────────────────────────────── Build ──────────────────────────────
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript, compressor: Terser.new
-# end
+configure :build do
+  set :build_dir, "docs" # GitHub Pages publishes this folder
+
+  # Compile for publication
+  activate :relative_assets
+
+  activate :minify_css
+  activate :minify_javascript, compressor: Terser.new
+end
