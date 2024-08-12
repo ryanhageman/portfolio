@@ -1,0 +1,11 @@
+@import 'metropolis-font';
+@import 'oswald-font';
+
+:root {
+  --font--heading: 'Oswald', var(--font-industrial);
+  --font--body: 'Metropolis', var(--font-neo-grotesque);
+
+  --font--weight-light: 200;
+  --font--weight-regular: 400;
+  --font--weight-bold: 800;
+}

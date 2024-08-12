@@ -1,24 +1,39 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
+// ╭───────────────────────────────────────────────────────────╮
+// │                        ITCSS Setup                        │
+// ╰───────────────────────────────────────────────────────────╯
+//
+//   1. Outside Libraries
+//
+//      This section is for any outside libraries that need to be
+//      available across the whole project. These come first so
+//      our styles can cascade over them if we need to.
+//
+//   2. Settings
+//
+//      Variables, fonts, and other basic system setup.
+//
+//   3. Base
+//
+//      Setting a good baseline that works across all browsers.
+//      Normalize and resets go here.
+//
+//   4. Elements
+//
+//      This is for raw HTML elements.
+//
+//   5. Components
+//
+//      Each component has its own file to live in.
+//
+//   6. Overrides
+//
+//      This comes last so it cascades over anything above.
+//
+// ──────────────────────────────────────────────────────────────────────
 
-a {
-  color: rgba(#000, 0.7);
+// ────────────────────────── Outside Libraries ──────────────────────────
+@import 'vendor/open-props';
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
-}
+// ─────────────────────────────── Settings ──────────────────────────────
+@import 'settings/typography';
+@import 'settings/colors';
