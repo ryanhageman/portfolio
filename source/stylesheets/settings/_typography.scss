@@ -11,5 +11,13 @@
 
   --font--color-primary: var(--teal-12);
   --font--color-secondary: var(--teal-10);
-  --font--color-link: var(--teal-7)
+  --font--color-link: var(--teal-7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font--color-primary: var(--teal-0);
+    --font--color-secondary: var(--teal-2);
+    --font--color-link: var(--teal-4);
+  }
 }
