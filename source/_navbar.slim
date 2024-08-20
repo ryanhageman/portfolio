@@ -1,0 +1,23 @@
+header
+  nav class="c-navbar"
+    = link_to "/index.html", class: "c-navbar__logo-link-wrapper" do
+      = image_tag "logo-thumbnail.png", class: "c-navbar__logo"
+      .c-navbar__brand Ryan Hageman
+
+    ul class="c-navbar__menu" data-navbar-target="menu"
+      - data.navbar.each do |_, link|
+        - if link['visible']
+          li class="c-navbar__item"
+            = link_to link['title'], 
+                      link['url'], 
+                      class: "c-navbar__link", 
+                      data: {navbar_target: "link"}
+
+
+    .c-navbar__hamburger data-navbar-target="hamburger"
+      span class="c-navbar__hamburger-bar"
+      span class="c-navbar__hamburger-bar"
+      span class="c-navbar__hamburger-bar"
+
+
+script src="/javascripts/components/navbar.js" defer
