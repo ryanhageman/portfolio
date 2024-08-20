@@ -37,3 +37,10 @@
 // ─────────────────────────────── Settings ──────────────────────────────
 @import 'settings/typography';
 @import 'settings/colors';
+@import 'settings/viewports';
+
+// ───────────────────────────────── Base ────────────────────────────────
+@import 'base/general';
+
+// ────────────────────────────── Components ─────────────────────────────
+@import 'components/navbar';
