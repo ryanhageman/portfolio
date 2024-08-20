@@ -1,0 +1,19 @@
+home: 
+  title: Home
+  url: /
+  visible: false
+
+testimonials:
+  title: What Folks Are Saying
+  url: /testimonials
+  visible: true
+  
+about:
+  title: About
+  url: /about
+  visible: true
+
+blog:
+  title: Blog
+  url: https://furiouslycurious.com
+  visible: true
