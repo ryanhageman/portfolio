@@ -42,5 +42,10 @@
 // ───────────────────────────────── Base ────────────────────────────────
 @import 'base/general';
 
+// ──────────────────────────────── Objects ────────────────────────────────
+@import 'objects/container';
+@import 'objects/page';
+
 // ────────────────────────────── Components ─────────────────────────────
 @import 'components/navbar';
+@import 'components/recommendation';
