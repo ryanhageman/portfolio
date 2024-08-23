@@ -3,15 +3,27 @@
     display: grid;
     grid-template-columns: var(--size-px-12) 1fr;
     margin-bottom: var(--size-px-7);
+
+    @include phone-or-smaller {
+      grid-template-columns: var(--size-px-11) 1fr;
+    }
   }
 
   &__image {
     width: var(--size-px-11);
     border-radius: var(--radius-round);
+
+    @include phone-or-smaller {
+      width: var(--size-px-10);
+    }
   }
 
   &__text {
     max-inline-size: var(--size-content-1);
+
+    @include phone-or-larger {
+      max-inline-size: 30ch;
+    }
 
     @include tablet-or-larger {
       max-inline-size: var(--size-content-2);
@@ -25,6 +37,10 @@
   &__heading {
     font-family: var(--font--heading);
     font-size: var(--font-size-6);
+
+    @include phone-or-smaller {
+      font-size: var(--font-size-5);
+    }
   }
 
   &__sub-heading {
@@ -33,6 +49,10 @@
     font-variant: small-caps;
     color: var(--font--color-secondary);
     margin-bottom: var(--size-px-3);
+
+    @include phone-or-smaller {
+      font-size: var(--font-size-2);
+    }
   }
 
   &__quote {
