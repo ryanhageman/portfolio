@@ -5,12 +5,12 @@ home:
 
 testimonials:
   title: What Folks Are Saying
-  url: /testimonials
+  url: /recommendations.html
   visible: true
   
 about:
   title: About
-  url: /about
+  url: /about.html
   visible: true
 
 blog:
