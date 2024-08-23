@@ -1,0 +1,8 @@
+h1 What Folks Are Saying
+
+- data.recommendations.each do |_file, person|
+  = link_to person.profile_url, target: "_blank" do
+    img src=person.profile_pic_src
+  h2 = person.name 
+  div = "#{person.title} for #{person.company}"
+  div = person.recommendation
