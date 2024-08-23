@@ -3,7 +3,7 @@
 
   - data.recommendations.each do |_file, person|
     .c-recommendation__card
-      = link_to person.profile_url, target: "_blank" do
+      = link_to person.profile_url, class: "c-recommendation__image-link" , target: "_blank" do
         img.c-recommendation__image src=person.profile_pic_src alt="#{person.name} Profile Photo"
       .c-recommendation__text
         h2.c-recommendation__heading = person.name 

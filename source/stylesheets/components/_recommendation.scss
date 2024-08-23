@@ -18,6 +18,10 @@
     }
   }
 
+  &__image-link {
+    justify-self: center;
+  }
+
   &__text {
     max-inline-size: var(--size-content-1);
 
