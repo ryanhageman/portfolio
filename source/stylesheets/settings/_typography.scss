@@ -9,15 +9,15 @@
   --font--weight-regular: 400;
   --font--weight-bold: 800;
 
-  --font--color-primary: var(--teal-12);
-  --font--color-secondary: var(--teal-9);
-  --font--color-link: var(--teal-7);
+  --font--color-primary: var(--cyan-12);
+  --font--color-secondary: var(--cyan-9);
+  --font--color-link: var(--cyan-7);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font--color-primary: var(--teal-0);
-    --font--color-secondary: var(--teal-2);
-    --font--color-link: var(--teal-4);
+    --font--color-primary: var(--cyan-0);
+    --font--color-secondary: var(--cyan-2);
+    --font--color-link: var(--cyan-4);
   }
 }
