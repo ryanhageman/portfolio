@@ -1,0 +1,45 @@
+.c-about {
+  &__profile-pic {
+    border-radius: var(--radius-round);
+    max-width: var(--size-px-13);
+    margin: var(--size-px-4) auto;
+
+    @include tablet-or-larger {
+      float: left;
+      margin-right: var(--size-px-4);
+    }
+  }
+
+  &__text {
+    max-inline-size: 80%;
+    margin: auto;
+
+    @include phone-or-larger {
+      max-inline-size: var(--size-content-2);
+    }
+
+    @include tablet-or-larger {
+      max-inline-size: var(--size-content-3);
+    }
+
+    p {
+      margin-bottom: var(--size-px-3);
+    }
+  }
+
+  &__heading {
+    font-family: var(--font--heading);
+    margin-block: var(--size-4) var(--size-3);
+    letter-spacing: var(--font-letterspacing-1);
+  }
+
+  &__li {
+    margin-bottom: var(--size-2);
+  }
+
+  &__li--heading {
+    font-family: var(--font--heading);
+    font-variant-caps: small-caps;
+    letter-spacing: var(--font-letterspacing-3);
+  }
+}
