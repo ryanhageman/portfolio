@@ -1,5 +1,7 @@
 .o-page {
   &__main-heading {
+    font-family: var(--font--heading);
+    letter-spacing: var(--font-letterspacing-1);
     text-align: center;
     margin-bottom: var(--size-px-8);
   }
