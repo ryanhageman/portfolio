@@ -5,7 +5,7 @@ title: Ryan Hageman | Recommendations
 .o-container.o-container--centered
   h1.o-page__main-heading What Folks Are Saying
 
-  - data.recommendations.each do |_file, person|
+  - data.recommendations.sort_by { |_file, person| person.section }.each do |_file, person|
     .c-recommendation__card
       = link_to person.profile_url, class: "c-recommendation__image-link" , target: "_blank" do
         img.c-recommendation__image src=person.profile_pic_src alt="#{person.name} Profile Photo"
