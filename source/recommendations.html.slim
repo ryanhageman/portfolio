@@ -9,9 +9,15 @@ title: Ryan Hageman | Recommendations
     .c-recommendation__card
       = link_to person.profile_url, class: "c-recommendation__image-link" , target: "_blank" do
         img.c-recommendation__image src=person.profile_pic_src alt="#{person.name} Profile Photo"
-      .c-recommendation__text
+
+      .c-recommendation__name
         h2.c-recommendation__heading = person.name 
-        .c-recommendation__sub-heading = "#{person.title} for #{person.company}"
+        
+        .c-recommendation__job-title
+          = person.title
+          br
+          span.c-recommendation__company = person.company
+
         .c-recommendation__quote
           - person.recommendation.split("\n").each do |paragraph|
             p = paragraph

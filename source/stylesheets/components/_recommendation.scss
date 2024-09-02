@@ -38,7 +38,7 @@
     }
   }
 
-  &__heading {
+  &__name {
     font-family: var(--font--heading);
     font-size: var(--font-size-6);
 
@@ -47,15 +47,27 @@
     }
   }
 
-  &__sub-heading {
+  &__job-title {
     font-family: var(--font--heading);
     font-size: var(--font-size-3);
     font-variant: small-caps;
     color: var(--font--color-secondary);
-    margin-bottom: var(--size-px-3);
+    margin-block: var(--size-px-1) var(--size-px-3);
+    line-height: var(--font-lineheight-0);
 
     @include phone-or-smaller {
       font-size: var(--font-size-2);
+    }
+  }
+
+  &__company {
+    font-family: var(--font--heading);
+    font-size: var(--font-size-2);
+    font-variant: small-caps;
+    color: var(--font--color-secondary);
+
+    @include phone-or-smaller {
+      font-size: var(--font-size-1);
     }
   }
 
