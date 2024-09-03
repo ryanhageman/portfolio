@@ -10,8 +10,9 @@ html
           
     title = current_page.data.title || "Middleman"
     
-    = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
+    = vite_client_tag
+    = vite_stylesheet_tag "stylesheets/site.css.scss"
+    = vite_javascript_tag "application"
 
   body
     == partial "navbar"

@@ -1,0 +1,120 @@
+$xs-screen: 360px;
+$sm-screen: 480px;
+$md-screen: 768px;
+$lg-screen: 1024px;
+$xl-screen: 1440px;
+$xxl-screen: 1920px;
+
+/* ╭───────────────────────────────────────────────────────────╮ */
+/* │               Target a Specific Screen Size               │ */
+/* ╰───────────────────────────────────────────────────────────╯ */
+
+@mixin tiny-screen {
+  @media (max-width: $xs-screen) {
+    @content;
+  }
+}
+
+@mixin small-phone-screen {
+  @media (min-width: $xs-screen) and (max-width: $sm-screen) {
+    @content;
+  }
+}
+
+@mixin phone-screen {
+  @media (min-width: $sm-screen) and (max-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media (min-width: $md-screen) and (max-width: $lg-screen) {
+    @content;
+  }
+}
+
+@mixin small-laptop-screen {
+  @media (min-width: $lg-screen) and (max-width: $xl-screen) {
+    @content;
+  }
+}
+
+@mixin laptop-screen {
+  @media (min-width: $xl-screen) and (max-width: $xxl-screen) {
+    @content;
+  }
+}
+
+@mixin large-monitor-screen {
+  @media (min-width: $xxl-screen) {
+    @content;
+  }
+}
+
+/* ╭───────────────────────────────────────────────────────────╮ */
+/* │                   Screen Size or Larger                   │ */
+/* ╰───────────────────────────────────────────────────────────╯ */
+
+@mixin xs-screen-or-larger {
+  @media (min-width: $xs-screen) {
+    @content;
+  }
+}
+
+@mixin phone-or-larger {
+  @media (min-width: $sm-screen) {
+    @content;
+  }
+}
+
+@mixin tablet-or-larger {
+  @media (min-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin small-laptop-or-larger {
+  @media (min-width: $lg-screen) {
+    @content;
+  }
+}
+
+@mixin laptop-or-larger {
+  @media (min-width: $xl-screen) {
+    @content;
+  }
+}
+
+/* ╭───────────────────────────────────────────────────────────╮ */
+/* │                   Screen Size or Smaller                  │ */
+/* ╰───────────────────────────────────────────────────────────╯ */
+
+@mixin small-phone-or-smaller {
+  @media (max-width: $sm-screen) {
+    @content;
+  }
+}
+
+@mixin phone-or-smaller {
+  @media (max-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin tablet-or-smaller {
+  @media (max-width: $lg-screen) {
+    @content;
+  }
+}
+
+@mixin small-laptop-or-smaller {
+  @media (max-width: $xl-screen) {
+    @content;
+  }
+}
+
+@mixin laptop-or-smaller {
+  @media (max-width: $xxl-screen) {
+    @content;
+  }
+}
