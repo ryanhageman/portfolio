@@ -1,4 +1,6 @@
 require "slim"
+require "vite_ruby"
+require "vite_padrino/tag_helpers"
 
 # ────────────────────────────── Extensions ──────────────────────────────
 
@@ -14,6 +16,16 @@ activate :livereload
 page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
+
+# ─────────────────────────────── Helpers ─────────────────────────────
+
+helpers VitePadrino::TagHelpers
+
+# ───────────────────────────── Development ───────────────────────────
+
+configure :development do
+  use ViteRuby::DevServerProxy, ssl_verify_none: true
+end
 
 # ──────────────────────────────── Build ──────────────────────────────
 
