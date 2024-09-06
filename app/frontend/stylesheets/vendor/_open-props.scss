@@ -2,11 +2,11 @@
 /* │                        Open Props                         │ */
 /* ╰───────────────────────────────────────────────────────────╯ */
 
-@import 'https://unpkg.com/open-props';
+@import 'open-props/style';
 
 /* ╭───────────────────────────────────────────────────────────╮ */
 /* │              Open Props Normalize / Buttons               │ */
 /* ╰───────────────────────────────────────────────────────────╯ */
 
-@import 'https://unpkg.com/open-props/normalize.min.css';
-@import 'https://unpkg.com/open-props/buttons.min.css';
+@import 'open-props/normalize';
+@import 'open-props/buttons';
