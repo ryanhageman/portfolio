@@ -33,10 +33,11 @@
 
 // ────────────────────────── Outside Libraries ──────────────────────────
 @import 'vendor/open-props';
+@import 'vendor/theme-toggle';
 
 // ─────────────────────────────── Settings ──────────────────────────────
-@import 'settings/typography';
 @import 'settings/colors';
+@import 'settings/typography';
 @import 'settings/viewports';
 
 // ───────────────────────────────── Base ────────────────────────────────
