@@ -1,6 +1,12 @@
 @import 'metropolis-font';
 @import 'oswald-font';
 
+@mixin dark-mode-font-colors {
+  --font--color-primary: var(--cyan-0);
+  --font--color-secondary: var(--cyan-2);
+  --font--color-link: var(--cyan-4);
+}
+
 :root {
   --font--heading: 'Oswald', var(--font-industrial);
   --font--body: 'Metropolis', var(--font-neo-grotesque);
@@ -15,9 +21,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --font--color-primary: var(--cyan-0);
-    --font--color-secondary: var(--cyan-2);
-    --font--color-link: var(--cyan-4);
+  body {
+    @include dark-mode-font-colors;
   }
+}
+
+body[data-theme-mode-value='dark'] {
+  @include dark-mode-font-colors;
 }

@@ -22,7 +22,7 @@
   }
 
   &__svg-icon {
-    fill: var(--font--color-primary)
+    fill: var(--font--color-primary);
   }
 
   &__menu {
@@ -44,6 +44,11 @@
     &:hover {
       color: var(--font--color-link);
     }
+  }
+
+  &__theme-toggle {
+    box-shadow: none;
+    padding-inline: 0;
   }
 
   &__hamburger {

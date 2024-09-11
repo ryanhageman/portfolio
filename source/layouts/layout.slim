@@ -14,7 +14,7 @@ html
     = vite_stylesheet_tag "stylesheets/site.css.scss"
     = vite_javascript_tag "application"
 
-  body
+  body data-controller="theme" data-theme-mode-value="light"
     == partial "navbar"
 
     == yield
