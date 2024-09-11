@@ -1,3 +1,10 @@
+@mixin dark-mode-colors {
+  --palette--surface-1: var(--teal-12);
+  --palette--surface-2: var(--teal-11);
+  --palette--surface-3: var(--teal-1);
+  --palette--surface-4: var(--teal-0);
+}
+
 :root {
   --palette--surface-1: var(--teal-0);
   --palette--surface-2: var(--teal-1);
@@ -6,10 +13,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --palette--surface-1: var(--teal-12);
-    --palette--surface-2: var(--teal-11);
-    --palette--surface-3: var(--teal-1);
-    --palette--surface-4: var(--teal-0);
+  body {
+    @include dark-mode-colors;
   }
+}
+
+body[data-theme-mode-value='dark'] {
+  @include dark-mode-colors;
 }
