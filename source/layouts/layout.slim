@@ -8,14 +8,17 @@ html
                   initial-scale=1, 
                   shrink-to-fit=no")
           
-    title = current_page.data.title || "Middleman"
+    title = current_page.data.title || "Ryan Hageman"
     
     = vite_client_tag
     = vite_stylesheet_tag "stylesheets/site.css.scss"
     = vite_javascript_tag "application"
 
-  body data-controller="theme" data-theme-mode-value="light"
-    == partial "navbar"
+  body(data-controller="theme" 
+       data-theme-mode-value="light" 
+       data-theme-dark-mode-icon-class="theme-toggle--toggled")
+
+    == partial "partials/navbar/navbar"
 
     == yield
 

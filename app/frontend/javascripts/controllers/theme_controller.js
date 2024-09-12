@@ -6,12 +6,13 @@ const DARK_THEME = 'dark'
 export default class extends Controller {
   static targets = ['toggleButton']
   static values = { mode: String }
+  static classes = ['darkModeIcon']
 
   initialize() {
     this._useCurrentTheme()
   }
 
-  toggle() {
+  toggleTheme() {
     if (this.modeValue === DARK_THEME) {
       this._useLightTheme()
       return
@@ -34,14 +35,16 @@ export default class extends Controller {
   _useDarkTheme() {
     this.modeValue = DARK_THEME
     this.localStorageTheme = DARK_THEME
-    this.toggleButtonTarget.classList.add('theme-toggle--toggled')
+    this.toggleButtonTarget.classList.add(this.darkModeIconClass)
   }
 
   _useLightTheme() {
     this.modeValue = LIGHT_THEME
     this.localStorageTheme = LIGHT_THEME
-    this.toggleButtonTarget.classList.remove('theme-toggle--toggled')
+    this.toggleButtonTarget.classList.remove(this.darkModeIconClass)
   }
+
+  // ── Getters & Setters ───────────────────────────────────────────────
 
   set localStorageTheme(theme) {
     localStorage.themeMode = theme
