@@ -9,11 +9,11 @@ export default class extends Controller {
   static classes = ['darkModeIcon']
 
   initialize() {
-    this._useCurrentTheme()
+    this._useChosenTheme()
   }
 
   toggleTheme() {
-    if (this.modeValue === DARK_THEME) {
+    if (this.isDarkThemeChosen) {
       this._useLightTheme()
       return
     }
@@ -23,8 +23,11 @@ export default class extends Controller {
 
   // ── Private ─────────────────────────────────────────────────────────
 
-  _useCurrentTheme() {
-    if (this.isDarkThemeSet) {
+  _useChosenTheme() {
+    if (
+      this.isDarkThemeChosen ||
+      (this.isSystemPreferenceDark && !this.isLightThemeChosen)
+    ) {
       this._useDarkTheme()
       return
     }
@@ -34,32 +37,40 @@ export default class extends Controller {
 
   _useDarkTheme() {
     this.modeValue = DARK_THEME
-    this.localStorageTheme = DARK_THEME
+    this.savedTheme = DARK_THEME
     this.toggleButtonTarget.classList.add(this.darkModeIconClass)
   }
 
   _useLightTheme() {
     this.modeValue = LIGHT_THEME
-    this.localStorageTheme = LIGHT_THEME
+    this.savedTheme = LIGHT_THEME
     this.toggleButtonTarget.classList.remove(this.darkModeIconClass)
   }
 
   // ── Getters & Setters ───────────────────────────────────────────────
 
-  set localStorageTheme(theme) {
+  set savedTheme(theme) {
     localStorage.themeMode = theme
   }
 
-  get localStorageTheme() {
+  get savedTheme() {
     return localStorage.themeMode
   }
 
-  get isDarkThemeSet() {
-    return this.isLocalStorageDark || this.isSystemPreferenceDark
+  get isDarkThemeChosen() {
+    return this.isSavedThemeDark || this.modeValue === DARK_THEME
   }
 
-  get isLocalStorageDark() {
-    return this.localStorageTheme === DARK_THEME
+  get isLightThemeChosen() {
+    return this.isSavedThemeLight || this.modeValue === LIGHT_THEME
+  }
+
+  get isSavedThemeLight() {
+    return this.savedTheme === LIGHT_THEME
+  }
+
+  get isSavedThemeDark() {
+    return this.savedTheme === DARK_THEME
   }
 
   get isSystemPreferenceDark() {
