@@ -32,12 +32,12 @@ body {
   @media (prefers-color-scheme: light) {
 
     &:not([data-theme-mode-value]),
-    &[data-theme-mode-value='dark'] {
-      @include dark-mode-colors;
-    }
-
     &[data-theme-mode-value='light'] {
       @include light-mode-colors;
+    }
+
+    &[data-theme-mode-value='dark'] {
+      @include dark-mode-colors;
     }
   }
 }

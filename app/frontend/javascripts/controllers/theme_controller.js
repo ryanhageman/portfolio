@@ -15,10 +15,12 @@ export default class extends Controller {
   toggleTheme() {
     if (this.isDarkThemeChosen) {
       this._useLightTheme()
+      this.savedTheme = LIGHT_THEME
       return
     }
 
     this._useDarkTheme()
+    this.savedTheme = DARK_THEME
   }
 
   // ── Private ─────────────────────────────────────────────────────────
@@ -26,8 +28,9 @@ export default class extends Controller {
   _useChosenTheme() {
     if (
       this.isDarkThemeChosen ||
-      (this.isSystemPreferenceDark && !this.isLightThemeChosen)
+      (this.isSystemPreferenceDark && !this.isSavedThemeLight)
     ) {
+
       this._useDarkTheme()
       return
     }
@@ -37,13 +40,11 @@ export default class extends Controller {
 
   _useDarkTheme() {
     this.modeValue = DARK_THEME
-    this.savedTheme = DARK_THEME
     this.toggleButtonTarget.classList.add(this.darkModeIconClass)
   }
 
   _useLightTheme() {
     this.modeValue = LIGHT_THEME
-    this.savedTheme = LIGHT_THEME
     this.toggleButtonTarget.classList.remove(this.darkModeIconClass)
   }
 
