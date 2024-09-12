@@ -1,6 +1,12 @@
 @import 'metropolis-font';
 @import 'oswald-font';
 
+@mixin light-mode-font-colors {
+  --font--color-primary: var(--cyan-12);
+  --font--color-secondary: var(--cyan-9);
+  --font--color-link: var(--cyan-7);
+}
+
 @mixin dark-mode-font-colors {
   --font--color-primary: var(--cyan-0);
   --font--color-secondary: var(--cyan-2);
@@ -8,24 +14,38 @@
 }
 
 :root {
+  @include light-mode-font-colors;
+
   --font--heading: 'Oswald', var(--font-industrial);
   --font--body: 'Metropolis', var(--font-neo-grotesque);
 
   --font--weight-light: 200;
   --font--weight-regular: 400;
   --font--weight-bold: 800;
-
-  --font--color-primary: var(--cyan-12);
-  --font--color-secondary: var(--cyan-9);
-  --font--color-link: var(--cyan-7);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    @include dark-mode-font-colors;
+body {
+  @media (prefers-color-scheme: dark) {
+
+    &:not([data-theme-mode-value]),
+    &[data-theme-mode-value='dark'] {
+      @include dark-mode-font-colors;
+    }
+
+    &[data-theme-mode-value='light'] {
+      @include light-mode-font-colors;
+    }
   }
-}
 
-body[data-theme-mode-value='dark'] {
-  @include dark-mode-font-colors;
+  @media (prefers-color-scheme: light) {
+
+    &:not([data-theme-mode-value]),
+    &[data-theme-mode-value='dark'] {
+      @include dark-mode-font-colors;
+    }
+
+    &[data-theme-mode-value='light'] {
+      @include light-mode-font-colors;
+    }
+  }
 }
