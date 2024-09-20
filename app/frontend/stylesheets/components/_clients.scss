@@ -1,0 +1,63 @@
+.c-clients {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'headline'
+    'clients';
+  justify-items: center;
+  background: var(--palette--surface-dark-on-dark);
+
+  &__headline {
+    grid-area: headline;
+    font-family: var(--font--heading);
+    letter-spacing: var(--font-letterspacing-0);
+    margin-block: var(--size-4);
+  }
+
+  &__area {
+    grid-area: clients;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+
+  &__card {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+
+    @include phone-or-larger {
+      width: 35%;
+    }
+
+    @include tablet-or-larger {
+      width: 30%;
+    }
+
+    @include small-laptop-or-larger {
+      width: 25%;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--size-11);
+    margin: var(--size-4);
+
+    & img {
+      max-height: 100%;
+      max-width: 70%;
+      filter: grayscale(1);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0);
+        transform: scale(1.2);
+      }
+    }
+  }
+}
