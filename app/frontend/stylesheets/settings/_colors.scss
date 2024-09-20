@@ -3,6 +3,7 @@
   --palette--surface-2: var(--teal-1);
   --palette--surface-3: var(--teal-11);
   --palette--surface-4: var(--teal-12);
+  --palette--surface-dark-on-dark: var(--teal-0)
 }
 
 @mixin dark-mode-colors {
@@ -10,6 +11,7 @@
   --palette--surface-2: var(--teal-11);
   --palette--surface-3: var(--teal-1);
   --palette--surface-4: var(--teal-0);
+  --palette--surface-dark-on-dark: var(--teal-6)
 }
 
 :root {
