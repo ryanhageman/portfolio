@@ -1,3 +1,5 @@
+@import "open-props/colors-hsl";
+
 @mixin light-mode-colors {
   --palette--surface-1: var(--teal-0);
   --palette--surface-2: var(--teal-1);
@@ -5,6 +7,7 @@
   --palette--surface-4: var(--teal-12);
   --palette--surface-dark-on-dark: var(--teal-0);
   --palette--surface-dark: var(--teal-12);
+  --palette--surface-2--transparent: hsl(var(--teal-1-hsl) / 80%);
 }
 
 @mixin dark-mode-colors {
@@ -14,6 +17,7 @@
   --palette--surface-4: var(--teal-0);
   --palette--surface-dark-on-dark: var(--teal-6);
   --palette--surface-dark: var(--teal-12);
+  --palette--surface-2--transparent: hsl(var(--teal-11-hsl) / 80%);
 }
 
 :root {
