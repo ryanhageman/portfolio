@@ -6,6 +6,7 @@
 
     @include phone-or-smaller {
       grid-template-columns: var(--size-px-11) 1fr;
+      margin-right: var(--size-px-4);
     }
   }
 
