@@ -1,0 +1,83 @@
+.c-recommendation {
+  &__card {
+    display: grid;
+    grid-template-columns: var(--size-px-12) 1fr;
+    margin-bottom: var(--size-px-7);
+
+    @include phone-or-smaller {
+      grid-template-columns: var(--size-px-11) 1fr;
+      margin-right: var(--size-px-4);
+    }
+  }
+
+  &__image {
+    width: var(--size-px-11);
+    border-radius: var(--radius-round);
+
+    @include phone-or-smaller {
+      width: var(--size-px-10);
+    }
+  }
+
+  &__image-link {
+    justify-self: center;
+  }
+
+  &__text {
+    max-inline-size: var(--size-content-1);
+
+    @include phone-or-larger {
+      max-inline-size: 30ch;
+    }
+
+    @include tablet-or-larger {
+      max-inline-size: var(--size-content-2);
+    }
+
+    @include laptop-or-larger {
+      max-inline-size: var(--size-content-3);
+    }
+  }
+
+  &__name {
+    font-family: var(--font--heading);
+    font-size: var(--font-size-6);
+
+    @include phone-or-smaller {
+      font-size: var(--font-size-5);
+    }
+  }
+
+  &__job-title {
+    font-family: var(--font--heading);
+    font-size: var(--font-size-3);
+    font-variant: small-caps;
+    color: var(--font--color-secondary);
+    margin-block: var(--size-px-1) var(--size-px-3);
+    line-height: var(--font-lineheight-0);
+
+    @include phone-or-smaller {
+      font-size: var(--font-size-2);
+    }
+  }
+
+  &__company {
+    font-family: var(--font--heading);
+    font-size: var(--font-size-2);
+    font-variant: small-caps;
+    color: var(--font--color-secondary);
+
+    @include phone-or-smaller {
+      font-size: var(--font-size-1);
+    }
+  }
+
+  &__quote {
+    font-size: var(--font-size-1);
+    font-style: italic;
+
+    p {
+      margin-bottom: var(--size-px-3);
+    }
+  }
+}

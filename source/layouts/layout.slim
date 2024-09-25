@@ -8,13 +8,18 @@ html
                   initial-scale=1, 
                   shrink-to-fit=no")
           
-    title = current_page.data.title || "Middleman"
+    title = current_page.data.title || "Ryan Hageman"
     
-    = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
+    = vite_client_tag
+    = vite_stylesheet_tag "site.css.scss"
+    = vite_javascript_tag "application"
 
-  body
-    == partial "navbar"
+  body(data-controller="theme" 
+       data-theme-mode-value="light" 
+       data-theme-dark-mode-icon-class="theme-toggle--toggled")
+
+    == partial "partials/navbar/navbar"
 
     == yield
 
+    == partial "partials/footer"

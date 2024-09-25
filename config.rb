@@ -1,4 +1,6 @@
 require "slim"
+require "vite_ruby"
+require "vite_padrino/tag_helpers"
 
 # ────────────────────────────── Extensions ──────────────────────────────
 
@@ -15,6 +17,16 @@ page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
 
+# ─────────────────────────────── Helpers ─────────────────────────────
+
+helpers VitePadrino::TagHelpers
+
+# ───────────────────────────── Development ───────────────────────────
+
+configure :development do
+  use ViteRuby::DevServerProxy, ssl_verify_none: true
+end
+
 # ──────────────────────────────── Build ──────────────────────────────
 
 configure :build do
@@ -23,7 +35,4 @@ configure :build do
   # Compile for publication
   activate :relative_assets
   set :relative_links, true
-
-  activate :minify_css
-  activate :minify_javascript, compressor: Terser.new
 end

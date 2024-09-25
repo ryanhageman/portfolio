@@ -1,0 +1,27 @@
+header
+  nav class="c-navbar" data-controller="navbar"
+    = link_to "/index.html", class: "c-navbar__logo-link-wrapper" do
+      = image_tag "logo-thumbnail.png", class: "c-navbar__logo"
+      .c-navbar__brand Ryan Hageman
+
+    ul class="c-navbar__menu" data-navbar-target="menu"
+      - data.navbar.each do |_, link|
+        - if link['visible']
+          li class="c-navbar__item"
+            = link_to(link['title'], 
+                      link['url'], 
+                      class: "c-navbar__link", 
+                      data: {navbar_target: "link"})
+
+      = partial "partials/navbar/theme_toggle_button"
+
+      = partial "partials/navbar/github_link"
+
+    .c-navbar__hamburger(
+      data-navbar-target="hamburger" 
+      data-action="click->navbar#toggleMenu")
+
+      span class="c-navbar__hamburger-bar"
+      span class="c-navbar__hamburger-bar"
+      span class="c-navbar__hamburger-bar"
+

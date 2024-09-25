@@ -2,5 +2,21 @@
 title: Ryan Hageman
 ---
 
-h1 Web Apps That Work For You
+.c-hero
 
+  h1.c-hero__headline Web Apps That Work For You
+  .c-hero__sub-heading I build custom web solutions and improve existing ones 
+    to simplify your digital world
+
+.c-clients
+
+  h2.c-clients__headline Happy Clients
+
+  .c-clients__area
+
+    - data.clients.display_order.each do |client|
+      - client_data = data.clients[client]
+      .c-clients__card
+        = link_to client_data.website, target: "_blank" do
+          .c-clients__logo
+            = image_tag "client-logos/#{client_data.logo}", alt: "#{client_data.name} Logo"

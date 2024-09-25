@@ -1,0 +1,21 @@
+.c-hero {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.8) 100%),
+    url('/images/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: var(--size-15) 0 var(--size-11) var(--size-5);
+  color: var(--font--color-primary--light);
+
+  &__headline {
+    font-family: var(--font--heading);
+    font-size: var(--font-size-6);
+    font-variant-caps: small-caps;
+    max-width: var(--size-header-3);
+  }
+
+  &__sub-heading {
+    max-width: var(--size-header-3);
+  }
+}
