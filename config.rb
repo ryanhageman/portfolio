@@ -35,7 +35,4 @@ configure :build do
   # Compile for publication
   activate :relative_assets
   set :relative_links, true
-
-  activate :minify_css
-  activate :minify_javascript, compressor: Terser.new
 end
