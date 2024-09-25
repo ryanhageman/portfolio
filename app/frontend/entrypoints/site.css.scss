@@ -6,7 +6,7 @@
 //
 //      This section is for any outside libraries that need to be
 //      available across the whole project. These come first so
-//      our styles can cascade over them if we need to.
+//      ou../styles can cascade over them if we need to.
 //
 //   2. Settings
 //
@@ -32,25 +32,25 @@
 // ──────────────────────────────────────────────────────────────────────
 
 // ────────────────────────── Outside Libraries ──────────────────────────
-@import 'vendor/open-props';
-@import 'vendor/theme-toggle';
+@import '../stylesheets/vendor/open-props';
+@import '../stylesheets/vendor/theme-toggle';
 
 // ─────────────────────────────── Settings ──────────────────────────────
-@import 'settings/colors';
-@import 'settings/typography';
-@import 'settings/viewports';
+@import '../stylesheets/settings/colors';
+@import '../stylesheets/settings/typography';
+@import '../stylesheets/settings/viewports';
 
 // ───────────────────────────────── Base ────────────────────────────────
-@import 'base/general';
+@import '../stylesheets/base/general';
 
 // ──────────────────────────────── Objects ────────────────────────────────
-@import 'objects/container';
-@import 'objects/page';
+@import '../stylesheets/objects/container';
+@import '../stylesheets/objects/page';
 
 // ────────────────────────────── Components ─────────────────────────────
-@import 'components/navbar';
-@import 'components/hero';
-@import 'components/clients';
-@import 'components/recommendation';
-@import 'components/about';
-@import 'components/footer';
+@import '../stylesheets/components/navbar';
+@import '../stylesheets/components/hero';
+@import '../stylesheets/components/clients';
+@import '../stylesheets/components/recommendation';
+@import '../stylesheets/components/about';
+@import '../stylesheets/components/footer';
