@@ -1,15 +1,4 @@
 {
-  "entrypoints/application.js": {
-    "file": "assets/application-6i9cc8BQ.js",
-    "name": "entrypoints/application.js",
-    "src": "entrypoints/application.js",
-    "isEntry": true
-  },
-  "entrypoints/site.css.scss": {
-    "file": "assets/site-Dp9VKwWr.css",
-    "src": "entrypoints/site.css.scss",
-    "isEntry": true
-  },
   "fonts/metropolis-bold-italic.woff": {
     "file": "assets/metropolis-bold-italic-CxfX01Zs.woff",
     "src": "fonts/metropolis-bold-italic.woff"
