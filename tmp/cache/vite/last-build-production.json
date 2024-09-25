@@ -1,7 +1,7 @@
 {
   "success": true,
   "errors": "\n/images/hero-image.jpg referenced in /images/hero-image.jpg didn't resolve at build time, it will remain unchanged to be resolved at runtime\n",
-  "timestamp": "2024-09-25 13:57:04",
+  "timestamp": "2024-09-25 14:06:23",
   "vite_ruby": "3.8.0",
   "digest": "15c330fd3ba4b49508d54a618b116287ab10e096"
 }
