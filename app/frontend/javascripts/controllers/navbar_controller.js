@@ -6,5 +6,7 @@ export default class extends Controller {
   toggleMenu() {
     this.hamburgerTarget.classList.toggle('is-open')
     this.menuTarget.classList.toggle('is-open')
+    document.body.classList.toggle('c-navbar--is-open')
   }
+
 }
