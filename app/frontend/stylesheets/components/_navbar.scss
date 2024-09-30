@@ -68,6 +68,10 @@
 }
 
 @include phone-or-smaller {
+  .c-navbar--is-open {
+    overflow: hidden;
+  }
+
   .c-navbar {
     &__menu {
       position: fixed;
