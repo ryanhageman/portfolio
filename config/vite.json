@@ -12,5 +12,5 @@
   "test": {
     "autoBuild": true,
     "publicOutputDir": "vite-test"
-  },
+  }
 }
