@@ -1,0 +1,31 @@
+.c-resume {
+  &__fold-toggle {
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: inline-block;
+
+      border-top: var(--border-size-3) solid transparent;
+      border-bottom: var(--border-size-3) solid transparent;
+      border-left: var(--border-size-3) solid currentColor;
+
+      vertical-align: middle;
+      margin-right: var(--size-2);
+      transform: translateY(var(--size-px-00));
+
+      transition: transform 0.1s var(--ease-out-1);
+    }
+
+    &.is-closed::before {
+      transform: rotate(90deg) translateX(var(--size-px-00));
+    }
+  }
+
+  &__foldable-content {
+
+    &.is-closed {
+      display: none;
+    }
+  }
+}
