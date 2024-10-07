@@ -1,6 +1,51 @@
 .c-resume {
+  &__headline {
+    font-family: var(--font--heading);
+    letter-spacing: var(--font-letterspacing-1);
+    justify-self: center;
+  }
+
+  &__section-headline {
+    font-size: var(--font-size-4);
+  }
+
+  &__links-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--size-4);
+
+    a {
+      color: var(--font--color-primary);
+
+      &:hover {
+        color: var(--font--color-link);
+      }
+    }
+  }
+
+  &__summary-section {
+    margin-bottom: var(--size-4);
+  }
+
+  &__technical-summary-section {
+    margin-bottom: var(--size-4);
+  }
+
+  &__experience-section {
+    margin-bottom: var(--size-4);
+  }
+
+  &__education-section {
+    margin-bottom: var(--size-4);
+  }
+
   &__fold-toggle {
     cursor: pointer;
+
+    &:hover {
+      color: var(--font--color-link);
+    }
 
     &::before {
       content: '';
@@ -23,7 +68,6 @@
   }
 
   &__foldable-content {
-
     &.is-closed {
       display: none;
     }
