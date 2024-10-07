@@ -1,6 +1,10 @@
-article
-  h3 
+article data-controller="resume-fold"
+  h3(class="c-resume__fold-toggle"
+     data-resume-fold-target="foldToggle"
+     data-action="click->resume-fold#toggleFold") 
     | Pluralsight:
     span< Instructor
   div September 2024 - Present
+
+  .c-resume__foldable-content data-resume-fold-target="foldable"
 

@@ -1,19 +1,22 @@
-article
-  h3
+article data-controller="resume-fold"
+  h3(class="c-resume__fold-toggle"
+     data-resume-fold-target="foldToggle"
+     data-action="click->resume-fold#toggleFold")
     | AeroJet International (now REVA, Inc. - Air Ambulance): 
     span International Flight Paramedic / Flight Coordinator
   div November 2004 - April 2005
 
-  ul
-    li
-      | Orchestrated and delivered critical care on international medical 
-      | evacuation flights, spanning locations from Cuba to Antigua to Peru, 
-      | ensuring seamless execution of complex missions.
-    li
-      | Provided ICU-level critical care to patients across the Caribbean, 
-      | adapting to varied emergency situations with high proficiency 
-      | and compassion.
-    li
-      | Collaborated with local governments, hospitals, insurance companies, 
-      | and ambulance services, facilitating smooth transitions and 
-      | continuity of care for patients under challenging conditions.
+  .c-resume__foldable-content data-resume-fold-target="foldable"
+    ul
+      li
+        | Orchestrated and delivered critical care on international medical 
+        | evacuation flights, spanning locations from Cuba to Antigua to Peru, 
+        | ensuring seamless execution of complex missions.
+      li
+        | Provided ICU-level critical care to patients across the Caribbean, 
+        | adapting to varied emergency situations with high proficiency 
+        | and compassion.
+      li
+        | Collaborated with local governments, hospitals, insurance companies, 
+        | and ambulance services, facilitating smooth transitions and 
+        | continuity of care for patients under challenging conditions.
