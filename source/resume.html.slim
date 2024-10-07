@@ -1,38 +1,51 @@
-h1 Ryan Hageman
-= link_to "LinkedIn: ryanjhageman", "https://www.linkedin.com/in/ryanjhageman/"
-br
-= link_to "GitHub: ryanhageman", "https://github.com/ryanhageman/"
-br
-= link_to "IMDB", "https://www.imdb.com/name/nm9708090/?ref_=fn_al_nm_1"
+.c-resume
+  h1 Ryan Hageman
+  = link_to "LinkedIn: ryanjhageman", "https://www.linkedin.com/in/ryanjhageman/"
+  br
+  = link_to "GitHub: ryanhageman", "https://github.com/ryanhageman/"
+  br
+  = link_to "IMDB", "https://www.imdb.com/name/nm9708090/?ref_=fn_al_nm_1"
 
-p You want a solution that’s easy to understand, use, and scale? Let’s talk. I work with clients and manage teams in the tech and film industry.
+  p You want a solution that’s easy to understand, use, and scale? Let’s talk. I work with clients and manage teams in the tech and film industry.
 
-section
-  h2 Technical Summary
+  section data-controller="resume-fold" 
+    h2(class="c-resume__fold-toggle" 
+       data-resume-fold-target="foldToggle" 
+       data-action="click->resume-fold#toggleFold")
+      | Technical Summary
 
-  == partial "partials/resume/technical_summary"
+    .c-resume__foldable-content data-resume-fold-target="foldable"
+      == partial "partials/resume/technical_summary"
 
-section
-  h2 Experience
+  section data-controller="resume-fold" 
+    h2(class="c-resume__fold-toggle" 
+       data-resume-fold-target="foldToggle" 
+       data-action="click->resume-fold#toggleFold")
+      | Experience
 
-  == partial "partials/resume/pluralsight"
-  == partial "partials/resume/ryan_hageman_consulting"
-  == partial "partials/resume/sparq"
-  == partial "partials/resume/grok_and_banter"
-  == partial "partials/resume/tech_talent_south"
-  == partial "partials/resume/autobrain"
-  == partial "partials/resume/film_medic"
-  == partial "partials/resume/tulane"
-  == partial "partials/resume/care"
-  == partial "partials/resume/amed"
-  == partial "partials/resume/nemsa"
-  == partial "partials/resume/nohd"
-  == partial "partials/resume/aerojet"
+    .c-resume__foldable-content data-resume-fold-target="foldable"
+      == partial "partials/resume/pluralsight"
+      == partial "partials/resume/ryan_hageman_consulting"
+      == partial "partials/resume/sparq"
+      == partial "partials/resume/grok_and_banter"
+      == partial "partials/resume/tech_talent_south"
+      == partial "partials/resume/autobrain"
+      == partial "partials/resume/film_medic"
+      == partial "partials/resume/tulane"
+      == partial "partials/resume/care"
+      == partial "partials/resume/amed"
+      == partial "partials/resume/nemsa"
+      == partial "partials/resume/nohd"
+      == partial "partials/resume/aerojet"
 
-section
-  h2 Education
+  section data-controller="resume-fold" 
+    h2(class="c-resume__fold-toggle" 
+       data-resume-fold-target="foldToggle" 
+       data-action="click->resume-fold#toggleFold") 
+      | Education
 
-  h3 
-    | University of Illinois at Chicago:
-    span< B.A. History
+    .c-resume__foldable-content data-resume-fold-target="foldable"
+      h3 
+        | University of Illinois at Chicago:
+        span< B.A. History
 
