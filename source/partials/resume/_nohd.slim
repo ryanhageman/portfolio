@@ -1,22 +1,24 @@
 article.c-job-card data-controller="resume-fold"
-  h3(class="c-resume__fold-toggle c-job-card__headline"
-     data-resume-fold-target="foldToggle"
-     data-action="click->resume-fold#toggleFold")
-    | City of New Orleans - Emergency Medical Services: 
-    span Field Training Officer - Paramedic
-  div November 2006 - May 2009 
+  .c-job-card__title
+    h3(class="c-resume__fold-toggle c-job-card__headline"
+       data-resume-fold-target="foldToggle"
+       data-action="click->resume-fold#toggleFold")
+      span.c-job-card__job-title> Field Training Officer - Paramedic:
+      br
+      span.c-job-card__company City of New Orleans - Emergency Medical Services
+    .c-job-card__dates November 2006 - May 2009 
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    ul
-      li
+    ul.c-job-card__bullet-list
+      li.c-job-card__bullet
         | Served as a Paramedic and Field Training Officer for 911 emergency 
         | services, providing crucial medical care in high-stakes situations 
         | and mentoring new paramedics in the field.
-      li
+      li.c-job-card__bullet
         | Functioned as a 911 dispatcher, managing emergency calls with precision 
         | and calm, and trained new dispatchers to ensure effective communication 
         | and quick response times.
-      li
+      li.c-job-card__bullet
         | Provided training to external trainees, including medical students and 
         | U.S. Air Force Pararescuemen (PJs), enhancing their emergency medical 
         | response capabilities and operational readiness.

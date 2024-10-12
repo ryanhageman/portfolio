@@ -1,37 +1,39 @@
 article.c-job-card data-controller="resume-fold"
-  h3(class="c-resume__fold-toggle c-job-card__headline"
-     data-resume-fold-target="foldToggle"
-     data-action="click->resume-fold#toggleFold")
-    | National EMS Academy: 
-    span Lead Instructor / Head of New Orleans Campus
-  div May 2009 - November 2011
+  .c-job-card__title
+    h3(class="c-resume__fold-toggle c-job-card__headline"
+       data-resume-fold-target="foldToggle"
+       data-action="click->resume-fold#toggleFold")
+      span.c-job-card__job-title Lead Instructor / Head of New Orleans Campus:
+      br
+      span.c-job-card__company National EMS Academy
+    .c-job-card__dates May 2009 - November 2011
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    div
+    .c-job-card__summary
       | Paramedic academy training EMS professionals in partnership with 
       | South Louisiana Community College and the Texas A&M Engineering 
       | Extension Service at nine campuses across Louisiana and Texas.
 
-    ul
-      li
+    ul.c-job-card__bullet-list
+      li.c-job-card__bullet
         | Led the New Orleans campus, achieving the highest performance in 
         | Louisiana and East Texas in EMT-Basic, advanced Cardiology, 
         | and Pharmacology education.
-      li
+      li.c-job-card__bullet
         | Innovatively rewrote the advanced Cardiology course to align with 
         | new National Education Standards, resulting in a remarkable 16.5% 
         | increase in average grades from 73% to 89.5%.
-      li
+      li.c-job-card__bullet
         | Successfully restructured the New Orleans Campus, recruiting a new 
         | Medical Director and support staff, and secured new clinical 
         | education contracts with local hospitals, enhancing the quality 
         | of student training.
-      li
+      li.c-job-card__bullet
         | Coordinated clinical education in the New Orleans region for 
         | The National EMS Academy and Acadian Ambulance, facilitating 
         | hands-on training experiences for students in prestigious 
         | healthcare facilities.
-      li
+      li.c-job-card__bullet
         | Authored, edited, and published lessons for the first National Registry 
         | and CECBEMS approved online refresher course, setting a new standard 
         | in EMS education.

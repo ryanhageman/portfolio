@@ -1,22 +1,24 @@
 article.c-job-card data-controller="resume-fold"
-  h3(class="c-resume__fold-toggle c-job-card__headline"
-     data-resume-fold-target="foldToggle"
-     data-action="click->resume-fold#toggleFold")
-    | AeroJet International (now REVA, Inc. - Air Ambulance): 
-    span International Flight Paramedic / Flight Coordinator
-  div November 2004 - April 2005
+  .c-job-card__title
+    h3(class="c-resume__fold-toggle c-job-card__headline"
+       data-resume-fold-target="foldToggle"
+       data-action="click->resume-fold#toggleFold")
+      span.c-job-card__job-title> International Flight Paramedic / Flight Coordinator:
+      br
+      span.c-job-card__company AeroJet International (now REVA, Inc. - Air Ambulance)
+    .c-job-card__dates November 2004 - April 2005
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    ul
-      li
+    ul.c-job-card__bullet-list
+      li.c-job-card__bullet
         | Orchestrated and delivered critical care on international medical 
         | evacuation flights, spanning locations from Cuba to Antigua to Peru, 
         | ensuring seamless execution of complex missions.
-      li
+      li.c-job-card__bullet
         | Provided ICU-level critical care to patients across the Caribbean, 
         | adapting to varied emergency situations with high proficiency 
         | and compassion.
-      li
+      li.c-job-card__bullet
         | Collaborated with local governments, hospitals, insurance companies, 
         | and ambulance services, facilitating smooth transitions and 
         | continuity of care for patients under challenging conditions.

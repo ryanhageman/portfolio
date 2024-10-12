@@ -1,10 +1,19 @@
 article.c-job-card data-controller="resume-fold"
-  h3(class="c-resume__fold-toggle c-job-card__headline"
-     data-resume-fold-target="foldToggle"
-     data-action="click->resume-fold#toggleFold") 
-    | Pluralsight:
-    span< Instructor
-  div September 2024 - Present
+  .c-job-card__title
+    h3(class="c-resume__fold-toggle c-job-card__headline"
+       data-resume-fold-target="foldToggle"
+       data-action="click->resume-fold#toggleFold") 
+      span.c-job-card__job-title> Instructor:
+      span.c-job-card__company Pluralsight
+    .c-job-card__dates September 2024 - Present
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
+    .c-job-card__summary
+      | I teach a mix of practical, hands-on skills and theory in 
+      | Ruby on Rails, React, Node, JavaScript, TypeScript, and 
+      | general web development.
+
+    .c-job-card__tech-list
+      | [ Ruby on Rails, React, JavaScript, TypeScript, Node, HTML, Sass, 
+      | PostCSS, PostgreSQL, MySQL, Vite, Git, GitHub ]
 

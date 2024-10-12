@@ -1,19 +1,20 @@
 article.c-job-card data-controller="resume-fold"
-  h3(class="c-resume__fold-toggle c-job-card__headline"
-     data-resume-fold-target="foldToggle"
-     data-action="click->resume-fold#toggleFold")
-    | Care Ambulance Service: 
-    span Education Coordinator
-  div October 2011 - October 2012
+  .c-job-card__title
+    h3(class="c-resume__fold-toggle c-job-card__headline"
+       data-resume-fold-target="foldToggle"
+       data-action="click->resume-fold#toggleFold")
+      span.c-job-card__job-title> Education Coordinator:
+      span.c-job-card__company Care Ambulance Service
+    .c-job-card__dates October 2011 - October 2012
 
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    ul
-      li
+    ul.c-job-card__bullet-list
+      li.c-job-card__bullet
         | Spearheaded the development of comprehensive continuing medical education, 
         | training, and safety programs, elevating the standards of patient care 
         | and team preparedness.
-      li
+      li.c-job-card__bullet
         | Simultaneously served on the frontline as a Paramedic, applying 
         | real-world experiences to inform and enhance educational initiatives, 
         | bridging theory with practice.

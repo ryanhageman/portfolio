@@ -1,7 +1,85 @@
 .c-job-card {
   margin-inline: var(--size-6);
+  margin-bottom: var(--size-6);
+
+  &__title {
+    margin-bottom: var(--size-2);
+  }
 
   &__headline {
     font-size: var(--font-size-3);
+    font-family: var(--font--heading);
+    max-width: 100%;
+  }
+
+  &__job-title {
+    font-variant: small-caps;
+    letter-spacing: var(--font-letterspacing-1);
+  }
+
+  &__client-list-title {
+    font-family: var(--font--heading);
+    font-variant: small-caps;
+    letter-spacing: var(--font-letterspacing-1);
+    margin-left: var(--size-3);
+    margin-bottom: var(--size-2);
+  }
+
+  &__class-title {
+    font-family: var(--font--heading);
+    font-variant: small-caps;
+    letter-spacing: var(--font-letterspacing-1);
+    margin-left: var(--size-3);
+    margin-bottom: var(--size-2);
+  }
+
+  &__company {
+    font-size: var(--font-size-2);
+    font-style: italic;
+  }
+
+  &__dates {
+    font-style: italic;
+    font-size: var(--font-size-0);
+    margin-top: var(--size-2);
+  }
+
+  &__summary {
+    margin-bottom: var(--size-2);
+  }
+
+  &__tech-list {
+    font-family: var(--font-monospace-code);
+    margin-bottom: var(--size-2);
+  }
+
+  &__bullet-list {
+    padding-left: var(--size-3);
+    font-size: var(--font-size-1);
+
+    &--foldable {
+      padding-left: var(--size-6);
+      font-size: var(--font-size-1);
+    }
+  }
+
+  &__client-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-variant: small-caps;
+    list-style-type: none;
+  }
+
+  &__bullet {
+    margin-bottom: var(--size-2);
+    max-width: 100%;
+  }
+
+  &__link {
+    color: var(--font--color-primary);
+
+    &:hover {
+      color: var(--font--color-link);
+    }
   }
 }
