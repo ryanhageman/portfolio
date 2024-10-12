@@ -1,8 +1,21 @@
 .c-resume {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+  @include tablet-or-larger {
+    width: var(--container-sm);
+  }
+
+  @include small-laptop-or-larger {
+    width: var(--container-md);
+  }
+
   &__headline {
     font-family: var(--font--heading);
     letter-spacing: var(--font-letterspacing-1);
-    justify-self: center;
+    align-self: center;
+    text-align: center;
   }
 
   &__section-headline {
