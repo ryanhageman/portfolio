@@ -1,0 +1,10 @@
+.c-job-card__title
+  h3(class="c-resume__fold-toggle c-job-card__headline"
+     data-resume-fold-target="foldToggle"
+     data-action="click->resume-fold#toggleFold")
+    span.c-job-card__job-title> #{job.job_title}:
+    span.c-job-card__company #{job.company}
+  .c-job-card__dates
+    | #{dates_at(job)} ・
+    span.c-job-card__time-worked< #{time_worked_at(job)}
+
