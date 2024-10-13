@@ -1,0 +1,43 @@
+company: Ryan Hageman Consulting
+website: https://ryanhageman.dev
+job_title: Lead Software Engineer / Consultant
+start_date: 2015-10
+end_date:
+
+summary: Do you need a full featured custom solution? Maybe you want to add a new feature. With a custom, Agile process, I take clients from their wish list to custom software.
+
+stack:
+  - Ruby on Rails
+  - React
+  - Stimulus
+  - Ruby
+  - JavaScript
+  - Node
+  - HTML
+  - Sass
+  - PostCSS
+  - PostgreSQL
+  - MySQL
+  - AWS
+  - Git
+  - GitHub
+  - RSpec
+  - MiniTest
+  - Jest
+  - Cypress
+
+resume_bullets:
+  - Contracted by InfiniteRed to handle the development of a comprehensive and fully a11y accessible Ruby on Rails HR application for ERSO at U.C. Berkeley, enhancing department efficiency and workflow through technical expertise.
+  - Designed a custom CSS library for Topology Eyewear that empowered designers to independently update the site, reducing the need for ongoing external development assistance.
+  - Overhauled Mi Ola's online store, dramatically reducing page load times from over 10 seconds to 0.7 seconds and adding new features to enhance user experience and site functionality.
+
+clients:
+  - Infinite Red
+  - U.C. Berkeley
+  - D.Boyd Art
+  - Mamba
+  - Mi Ola
+  - VL Group
+  - Topology Eyewear
+  - Algiers Investigations
+  - Cocomama
