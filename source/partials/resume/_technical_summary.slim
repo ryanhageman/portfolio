@@ -1,27 +1,5 @@
-ul
-  li 
-    b Back-End: 
-    | Ruby (Ruby on Rails, Sinatra), JavaScript (Node, TypeScript), 
-    | Elixir (Phoenix), Python (Django), AI Machine Learning / Computer Vision
-  li 
-    b Front-End: 
-    | JavaScript (React, Angular, Stimulus), Slim, Haml, Liquid, ERB, EJS, Handlebars
-  li 
-    b Styling: 
-    | CSS (PostCSS, Sass), Tailwind, Bootstrap, Material UI
-  li 
-    b Testing: 
-    | RSpec, MiniTest, Jest, Cypress
-  li 
-    b Database: 
-    | PostgreSQL, MySQL, GraphQL, Redis, Firebase
-  li 
-    b Build Tools: 
-    | GitHub Actions, CircleCI, TravisCI, ESbuild, Import Maps, Webpack, Gulp, Grunt
-  li 
-    b Cloud & Containerization: 
-    | AWS, Azure DevOps, Heroku, Docker
-  li 
-    b Version Control: 
-    | Git, GitHub, GitLabs, Azure Repos
-
+ul.c-resume__bullet-list
+  - data.resume.technical_summary.each do |section_name, bullets|
+    li.c-resume__bullet
+      span.c-resume__bullet-title> #{section_name}:
+      | #{bullets.join(", ")}

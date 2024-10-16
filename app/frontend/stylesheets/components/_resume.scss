@@ -73,6 +73,21 @@
     }
   }
 
+  &__bullet-list {
+    padding-left: var(--size-3);
+    font-size: var(--font-size-1);
+  }
+
+  &__bullet {
+    margin-bottom: var(--size-2);
+    max-width: 100%;
+  }
+
+  &__bullet-title {
+    font-variant: small-caps;
+    font-weight: var(--font-weight-7);
+  }
+
   &__fold-toggle {
     cursor: pointer;
 
