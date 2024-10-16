@@ -3,7 +3,26 @@
   margin-bottom: var(--size-6);
 
   &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: var(--size-2);
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: var(--size-11);
+
+    @include phone-or-smaller {
+      display: none;
+    }
+  }
+
+  &__logo {
+    max-width: var(--size-11);
+    max-height: var(--size-9);
   }
 
   &__headline {
