@@ -1,0 +1,53 @@
+Back-End:
+  - Ruby (Ruby on Rails, Sinatra)
+  - JavaScript (Node, TypeScript)
+  - Elixir (Phoenix)
+  - Python (Django)
+  - AI Machine Learning / Computer Vision
+  - RESTful APIs
+  - GraphQL APIs
+Front-End:
+  - JavaScript (React, Angular, Stimulus)
+  - Slim
+  - Haml
+  - Liquid
+  - ERB
+  - EJS
+  - Handlebars
+Styling:
+  - CSS (PostCSS, Sass)
+  - Tailwind
+  - Bootstrap
+  - Material UI
+Testing:
+  - RSpec
+  - MiniTest
+  - Jest
+  - Cypress
+Database:
+  - PostgreSQL
+  - MySQL
+  - GraphQL
+  - Redis
+  - Firebase
+Build Tools:
+  - GitHub Actions
+  - CircleCI
+  - TravisCI
+  - ESbuild
+  - Import Maps
+  - Webpack
+  - Gulp
+  - Grunt
+Cloud & Containerization:
+  - AWS
+  - Azure DevOps
+  - Heroku
+  - Docker
+Version Control:
+  - Git
+  - GitHub
+  - GitLabs
+  - Azure Repos
+Agile Project Management: 
+  - Certified Scrum Master
