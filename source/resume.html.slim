@@ -70,7 +70,8 @@ title: Ryan Hageman | Resume
         | Education
 
       .c-resume__foldable-content data-resume-fold-target="foldable"
-        h3 
-          | University of Illinois at Chicago:
-          span< B.A. History
+        h3.c-resume__school-name 
+          | #{data.resume.education.school}:
+          span.c-resume__degree< #{data.resume.education.degree}
+        .c-resume__school-location #{data.resume.education.location}
 

@@ -73,6 +73,23 @@
     }
   }
 
+  &__school-name {
+    font-size: var(--font-size-3);
+    font-family: var(--font--heading);
+    font-variant: small-caps;
+    max-width: 100%;
+  }
+
+  &__degree {
+    font-style: italic;
+    font-size: var(--font-size-3);
+  }
+
+  &__school-location {
+    font-style: italic;
+    font-size: var(--font-size-0);
+  }
+
   &__bullet-list {
     padding-left: var(--size-3);
     font-size: var(--font-size-1);
