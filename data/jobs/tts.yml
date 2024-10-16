@@ -1,0 +1,40 @@
+company: Tech Talent South
+website: https://www.techtalentandstrategy.com/
+logo: tts-logo.png
+job_title: Lead Instructor
+start_date: 2015-12
+end_date: 2018-01
+
+summary: Learning to develop software is hard. Learning it in 8-10 weeks is even harder. I work to teach it in a way that makes sense so it sticks.
+
+stack:
+  - Ruby on Rails
+  - Ruby
+  - RSpec
+  - Capybara
+  - JavaScript
+  - React
+  - HTML
+  - Sass
+  - CSS
+  - Git
+  - GitHub
+  - AWS
+  - TravisCI
+  - CircleCI
+
+classes: 
+  - name: Rails Web Development
+    title: Lead Instructor
+    bullets:
+      - Led a comprehensive 8 week intensive Ruby on Rails web development course, blending teaching responsibilities with curriculum development to offer a dynamic and effective learning experience.
+      - Given considerable autonomy in curriculum design, I crafted a unique program by integrating proven existing lessons with new, innovative content tailored to meet current industry standards and student needs.
+      - Focused on practical, hands-on learning experiences, ensuring students not only understood Ruby on Rails concepts but could also apply them in real-world scenarios, preparing them for immediate entry into the tech field.
+  - name: Advanced Rails
+    title: Lead Instructor
+    bullets:
+      - Taught an intensive 4-week Advanced Ruby on Rails course, diving deep into testing Rails applications with RSpec, building robust API’s, CI/CD with TravisCI and CircleCI, and AWS deployment, catering to students ready to elevate their development skills.
+  - name: React / JavaScript Web Development
+    title: Lead Instructor
+    bullets: 
+      - Led an intensive 10-week course designed to immerse students in the fundamentals of full-stack web development, covering key technologies such as React, JavaScript, AWS, Firebase, HTML, and CSS.

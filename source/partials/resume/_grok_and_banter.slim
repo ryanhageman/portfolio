@@ -1,31 +1,13 @@
-article.c-job-card data-controller="resume-fold"
-  .c-job-card__title
-    h3(class="c-resume__fold-toggle c-job-card__headline"
-       data-resume-fold-target="foldToggle"
-       data-action="click->resume-fold#toggleFold")
-      span.c-job-card__job-title> Software Engineer:
-      span.c-job-card__company Grok & Banter
-    .c-job-card__dates January 2016 - June 2016
+- job = data.jobs.grok_and_banter
 
+article.c-job-card data-controller="resume-fold"
+  = partial "partials/resume/job_card_title", locals: {job: job}
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    .c-job-card__summary
-      | Is that ad you just put up down the street doing better than your 
-      | other ones? Should you pull the one across town and double down 
-      | over here? 	
-
-    .c-job-card__tech-list
-      | [ Ruby on Rails, JavaScript, Node, Hapi.js, Kendo, HTML, Sass, 
-      | AI Machine Learning, OpenCV, Docker, RabbitMQ, PostgreSQL, AWS, 
-      | Git, GitHub ]
+    .c-job-card__summary #{job.summary}
+    
+    .c-job-card__tech-list #{tech_list_for(job)}
 
     ul.c-job-card__bullet-list
-      li.c-job-card__bullet
-        | Our team developed and refined a cutting-edge device using Node 
-        | and OpenCV, equipped with AI computer vision, to measure real-world 
-        | ad engagement, tracking passerby attention and interaction.
-      li.c-job-card__bullet
-        | Collaborated to engineer the Ruby on Rails client portal and API, 
-        | providing users with intuitive access to analytics similar to those 
-        | of online ads, for their physical advertisements. This included data 
-        | on views, engagements, and overall ad effectiveness.
+      - job.resume_bullets.each do |bullet|
+        li.c-job-card__bullet #{bullet}

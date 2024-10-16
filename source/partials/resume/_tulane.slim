@@ -1,26 +1,9 @@
-article.c-job-card data-controller="resume-fold"
-  .c-job-card__title
-    h3(class="c-resume__fold-toggle c-job-card__headline"
-       data-resume-fold-target="foldToggle"
-       data-action="click->resume-fold#toggleFold")
-      span.c-job-card__job-title> Training Center Faculty: 
-      br
-      span.c-job-card__company Tulane University School of Medicine / American Heart Association
-    .c-job-card__dates May 2003 - November 2014
+- job = data.jobs.tulane
 
+article.c-job-card data-controller="resume-fold"
+  = partial "partials/resume/job_card_title", locals: {job: job}
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
     ul.c-job-card__bullet-list
-      li.c-job-card__bullet
-        | Served as an instructor for Basic Life Support (BLS), Pediatric 
-        | Advanced Life Support (PALS), and Advanced Cardiovascular Life 
-        | Support (ACLS), delivering high-quality training to 
-        | healthcare professionals.
-      li.c-job-card__bullet
-        | Held a key role as Training Center Faculty for BLS, overseeing the 
-        | curriculum and ensuring the delivery of up-to-date, effective 
-        | training methods.
-      li.c-job-card__bullet
-        | Acted as a Course Coordinator for ACLS, managing course logistics, 
-        | content delivery, and instructor coordination to facilitate advanced 
-        | life support education.
+      - job.resume_bullets.each do |bullet|
+        li.c-job-card__bullet #{bullet}

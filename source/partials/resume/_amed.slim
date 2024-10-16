@@ -1,35 +1,11 @@
-article.c-job-card data-controller="resume-fold"
-  .c-job-card__title
-    h3(class="c-resume__fold-toggle c-job-card__headline"
-       data-resume-fold-target="foldToggle"
-       data-action="click->resume-fold#toggleFold")
-      span.c-job-card__job-title> System Administrator / Training Coordinator:
-      br
-      span.c-job-card__company A-Med Ambulance
-    .c-job-card__dates October 2012 - December 2015
+- job = data.jobs.amed
 
+article.c-job-card data-controller="resume-fold"
+  = partial "partials/resume/job_card_title", locals: {job: job}
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    .c-job-card__summary
-      | Ambulance service in New Orleans.
-
-    .c-job-card__tech-list
-      | [ Windows System Admin, Network Admin, Knoppix Linux, HIPAA Compliance, 
-      | Electronic Documentation ]
+    .c-job-card__tech-list #{tech_list_for(job)}
 
     ul.c-job-card__bullet-list
-      li.c-job-card__bullet
-        | Created the IT department, introducing vital technology infrastructure 
-        | and support systems to enhance operational efficiency and increase revenue.
-      li.c-job-card__bullet
-        | As Training Coordinator, led comprehensive training programs, 
-        | encompassing both medical protocols and technological tools, 
-        | enriching the team's dual competencies.	
-      li.c-job-card__bullet
-        | Installed, maintained, and conducted training for a new electronic 
-        | medical documentation system, achieving deployment 1 month ahead of 
-        | schedule and saving the company over $57,000 annually.	
-      li.c-job-card__bullet
-        | Continued to provide emergency care as a Paramedic, demonstrating a 
-        | commitment to excellence in both direct patient care and 
-        | behind-the-scenes support.
+      - job.resume_bullets.each do |bullet|
+        li.c-job-card__bullet #{bullet}

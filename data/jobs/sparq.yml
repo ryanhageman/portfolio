@@ -1,0 +1,32 @@
+company: Sparq
+website: https://www.teamsparq.com/
+logo: sparq-logo.png
+job_title: Senior II Software Engineer
+start_date: 2023-05
+end_date: 2024-03
+
+summary: As a senior software engineer, I led and contributed to teams that developed impactful software solutions in healthcare and marketing.
+
+stack:
+  - Ruby on Rails
+  - React
+  - JavaScript
+  - TypeScript
+  - Node
+  - HTML
+  - Sass
+  - Tailwind
+  - Material UI
+  - Docker
+  - PostgreSQL
+  - MySQL
+  - Git
+  - GitHub
+  - GitLab
+  - AzureDevOps
+  - Jira
+
+resume_bullets:
+  - Our team built a Ruby on Rails app to replace an older system, improving the interface and speed to access tumor DNA mapping data, which improved the creation of personalized cancer treatments.
+  - Led the development of a React-based Progressive Web App (PWA) for iPad, giving the client’s marketing team full offline functionality.
+  - Played a pivotal role in the team that modernized a Medicare provider’s website with React/Next.js and TypeScript, enhancing usability and satisfaction, while mentoring junior developers.

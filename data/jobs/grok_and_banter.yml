@@ -1,0 +1,29 @@
+company: Grok & Banter
+website: https://web.archive.org/web/20170516004526/https://grokandbanter.com/
+logo: grok-and-banter-logo.png
+job_title: Software Engineer
+start_date: 2016-01
+end_date: 2016-06
+
+summary: Is that ad you just put up down the street doing better than your other ones? Should you pull the one across town and double down over here?
+
+stack:
+  - Ruby on Rails
+  - JavaScript
+  - Node
+  - Hapi.js
+  - Kendo
+  - HTML
+  - Sass
+  - AI Machine Learning
+  - OpenCV
+  - Docker
+  - RabbitMQ
+  - PostgreSQL
+  - AWS
+  - Git
+  - GitHub
+
+resume_bullets:
+  - Our team developed and refined a cutting-edge device using Node and OpenCV, equipped with AI computer vision, to measure real-world ad engagement, tracking passerby attention and interaction.
+  - Collaborated to engineer the Ruby on Rails client portal and API, providing users with intuitive access to analytics similar to those of online ads, for their physical advertisements. This included data on views, engagements, and overall ad effectiveness.

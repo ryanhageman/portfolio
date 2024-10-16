@@ -23,6 +23,12 @@ module JobHelpers
     "[ #{job.stack.join(", ")} ]"
   end
 
+  def long_name?(job)
+    job.job_title.length > 30 ||
+      job.company.length > 30 ||
+      job.job_title.length + job.company.length > 60
+  end
+
   private
 
   def date_from(string)

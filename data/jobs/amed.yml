@@ -1,0 +1,21 @@
+company: A-Med Ambulance
+website: https://www.amednola.com/
+logo: amed-logo.png
+job_title: System Administrator / Training Coordinator
+start_date: 2012-10
+end_date: 2015-12
+
+summary: Ambulance service in New Orleans
+
+stack:
+  - Windows System Admin
+  - Network Admin
+  - Knoppix Linux
+  - HIPAA Compliance
+  - Electronic Documentation
+
+resume_bullets:
+  - Created the IT department, introducing vital technology infrastructure and support systems to enhance operational efficiency and increase revenue.
+  - As Training Coordinator, led comprehensive training programs, encompassing both medical protocols and technological tools, enriching the team's dual competencies.
+  - Installed, maintained, and conducted training for a new electronic medical documentation system, achieving deployment 1 month ahead of schedule and saving the company over $57,000 annually.
+  - Continued to provide emergency care as a Paramedic, demonstrating a commitment to excellence in both direct patient care and behind-the-scenes support.

@@ -1,71 +1,22 @@
-article.c-job-card data-controller="resume-fold"
-  .c-job-card__title
-    h3(class="c-resume__fold-toggle c-job-card__headline"
-       data-resume-fold-target="foldToggle"
-       data-action="click->resume-fold#toggleFold")
-      span.c-job-card__job-title> Lead Instructor:
-      span.c-job-card__company Tech Talent South
-    .c-job-card__dates December 2015 - January 2018
+- job = data.jobs.tts
 
+article.c-job-card data-controller="resume-fold"
+  = partial "partials/resume/job_card_title", locals: {job: job}
   
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    .c-job-card__summary
-      | Learning to develop software is hard. Learning it in 8-10 weeks is 
-      | even harder. I work to teach it in a way that makes sense so it sticks.
+    .c-job-card__summary #{job.summary}
 
-    .c-job-card__tech-list
-      | [ Ruby on Rails, Ruby, RSpec, Capybara, JavaScript, React, HTML, 
-      | Sass, CSS, Git, GitHub, AWS, TravisCI, CircleCI ]
+    .c-job-card__tech-list #{tech_list_for(job)}
 
-    div data-controller="resume-fold"
-      div(class="c-job-card__class-title c-resume__fold-toggle"
-          data-resume-fold-target="foldToggle"
-          data-action="click->resume-fold#toggleFold")
-        | Rails Web Development - Lead Instructor
+    - job.classes.each do |topic|
+      div data-controller="resume-fold"
+        div(class="c-job-card__class-title c-resume__fold-toggle"
+            data-resume-fold-target="foldToggle"
+            data-action="click->resume-fold#toggleFold")
+          | #{topic.name} - #{topic.title}
 
-      ul(class="c-job-card__bullet-list--foldable 
-                c-resume__foldable-content" 
-         data-resume-fold-target="foldable")        
-        li.c-job-card__bullet
-          | Led a comprehensive 8 week intensive Ruby on Rails web development 
-          | course, blending teaching responsibilities with curriculum development 
-          | to offer a dynamic and effective learning experience.
-        li.c-job-card__bullet
-          | Given considerable autonomy in curriculum design, I crafted a 
-          | unique program by integrating proven existing lessons with new, 
-          | innovative content tailored to meet current industry standards 
-          | and student needs.
-        li.c-job-card__bullet
-          | Focused on practical, hands-on learning experiences, ensuring 
-          | students not only understood Ruby on Rails concepts but could 
-          | also apply them in real-world scenarios, preparing them for 
-          | immediate entry into the tech field.
-
-    div data-controller="resume-fold"
-      div(class="c-job-card__class-title c-resume__fold-toggle"
-          data-resume-fold-target="foldToggle"
-          data-action="click->resume-fold#toggleFold")
-        | Advanced Rails - Lead Instructor
-
-      ul(class="c-job-card__bullet-list--foldable 
-                c-resume__foldable-content" 
-         data-resume-fold-target="foldable")        
-        li.c-job-card__bullet
-          | Taught an intensive 4-week Advanced Ruby on Rails course, diving deep 
-          | into testing Rails applications with RSpec, building robust API’s, 
-          | CI/CD with TravisCI and CircleCI, and AWS deployment, catering to 
-          | students ready to elevate their development skills.
-
-    div data-controller="resume-fold"
-      div(class="c-job-card__class-title c-resume__fold-toggle"
-          data-resume-fold-target="foldToggle"
-          data-action="click->resume-fold#toggleFold")
-        | React / JavaScript Web Development -  Lead Instructor
-
-      ul(class="c-job-card__bullet-list--foldable 
-                c-resume__foldable-content" 
-         data-resume-fold-target="foldable")        
-        li.c-job-card__bullet
-          | Led an intensive 10-week course designed to immerse students in the 
-          | fundamentals of full-stack web development, covering key technologies 
-          | such as React, JavaScript, AWS, Firebase, HTML, and CSS.
+        ul(class="c-job-card__bullet-list--foldable 
+                  c-resume__foldable-content" 
+           data-resume-fold-target="foldable")        
+          - topic.bullets.each do |bullet|
+            li.c-job-card__bullet #{bullet}

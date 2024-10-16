@@ -1,34 +1,14 @@
-article.c-job-card data-controller="resume-fold"
-  .c-job-card__title
-    h3(class="c-resume__fold-toggle c-job-card__headline"
-       data-resume-fold-target="foldToggle"
-       data-action="click->resume-fold#toggleFold")
-      span.c-job-card__job-title> Software Engineer:
-      span.c-job-card__company Autobrain 
-    .c-job-card__dates August 2016 - September 2016
+- job = data.jobs.autobrain
 
+article.c-job-card data-controller="resume-fold"
+  = partial "partials/resume/job_card_title", locals: {job: job}
 
   .c-resume__foldable-content data-resume-fold-target="foldable"
-    .c-job-card__summary
-      | Your car should be a smart car. It should definitely be able to talk to 
-      | your phone. Autobrain uses a customized OBD-II device to give you features 
-      | like Emergency Roadside Assistance, Car Finder, Alerts, Trip Reports, 
-      | and Diagnostics.
+    .c-job-card__summary #{job.summary}
 
-    .c-job-card__tech-list
-      | [ Ruby on Rails, Ruby, Minitest, JavaScript, HTML, Sass, CSS, Webview, 
-      | Git, GitHub ]
+    
+    .c-job-card__tech-list #{tech_list_for(job)}
 
     ul.c-job-card__bullet-list
-      li.c-job-card__bullet
-        | Enhanced a Ruby on Rails-based application that transforms standard 
-        | vehicles into smart cars through a device connected to the OBD port, 
-        | providing real-time data and diagnostics.
-      li.c-job-card__bullet
-        | Worked with Webview to ensure the application delivered a native-like 
-        | experience on iOS and Android platforms, facilitating its availability 
-        | through app stores.
-      li.c-job-card__bullet
-        | Dedicated to refining the application's functionality and user 
-        | interface, I identified and resolved software issues, and added 
-        | new features to enhance performance and user engagement.
+      - job.resume_bullets.each do |bullet|
+        li.c-job-card__bullet #{bullet}
