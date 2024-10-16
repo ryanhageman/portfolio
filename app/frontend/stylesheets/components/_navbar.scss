@@ -1,12 +1,18 @@
+:root {
+  --logo-height: var(--size-px-8);
+  --navbar__block-padding: var(--size-3);
+  --navbar__inline-padding: var(--size-5);
+}
+
 .c-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-3) var(--size-5);
+  padding: var(--navbar__block-padding) var(--navbar__inline-padding);
   z-index: 10;
 
   &__logo {
-    height: var(--size-px-8);
+    height: var(--logo-height);
   }
 
   &__logo-link-wrapper {
