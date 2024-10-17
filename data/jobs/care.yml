@@ -1,9 +1,10 @@
 company: Care Ambulance Service
 website:
-logo:
+logo: nola-star-of-life-logo.png
 job_title: Education Coordinator
 start_date: 2011-10
 end_date: 2012-10
+folded: true
 
 summary:
 

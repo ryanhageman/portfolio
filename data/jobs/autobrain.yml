@@ -4,6 +4,7 @@ logo: autobrain-logo.png
 job_title: Software Engineer
 start_date: 2016-08
 end_date: 2016-09
+folded: true
 
 summary: Your car should be a smart car. It should definitely be able to talk to your phone. Autobrain uses a customized OBD-II device to give you features like Emergency Roadside Assistance, Car Finder, Alerts, Trip Reports, and Diagnostics.
 
