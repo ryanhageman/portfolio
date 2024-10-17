@@ -1,6 +1,6 @@
 - job = data.jobs.tts
 
-article.c-job-card data-controller="resume-fold"
+article.c-job-card data-controller="resume-fold" data-resume-fold-folded-value="#{job.folded}"
   = partial "partials/resume/job_card_title", locals: {job: job}
   
   .c-resume__foldable-content data-resume-fold-target="foldable"
