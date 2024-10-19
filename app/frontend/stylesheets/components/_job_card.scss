@@ -96,6 +96,14 @@
   &__bullet {
     margin-bottom: var(--size-2);
     max-width: 100%;
+
+    a {
+      color: var(--font--color-primary);
+
+      &:hover {
+        color: var(--font--color-link);
+      }
+    }
   }
 
   &__link {

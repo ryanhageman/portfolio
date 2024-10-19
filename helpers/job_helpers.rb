@@ -29,6 +29,16 @@ module JobHelpers
       job.job_title.length + job.company.length > 60
   end
 
+  def resume_link_to(client)
+    company = data.clients[client]
+
+    if company.website
+      link_to company.name, company.website
+    else
+      company.name
+    end
+  end
+
   private
 
   def date_from(string)

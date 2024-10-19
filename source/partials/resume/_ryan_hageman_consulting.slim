@@ -20,7 +20,7 @@ article.c-job-card data-controller="resume-fold" data-resume-fold-folded-value="
          data-resume-fold-target="foldable")
 
          - job.clients.each do |client|
-           li.c-job-card__bullet #{client}
+           li.c-job-card__bullet #{resume_link_to(client)}
 
     .c-job-card__tech-list #{tech_list_for(job)}
 

@@ -34,12 +34,12 @@ resume_bullets:
   - Overhauled Mi Ola's online store, dramatically reducing page load times from over 10 seconds to 0.7 seconds and adding new features to enhance user experience and site functionality.
 
 clients:
-  - Infinite Red
-  - U.C. Berkeley
-  - D.Boyd Art
-  - Mamba
-  - Mi Ola
-  - VL Group
-  - Topology Eyewear
-  - Algiers Investigations
-  - Cocomama
+  - infinite_red
+  - berkeley
+  - dboyd
+  - mamba
+  - mi_ola
+  - vl_group
+  - topology
+  - algiers_investigations
+  - cocomama
