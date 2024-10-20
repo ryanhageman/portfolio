@@ -1,29 +1,30 @@
 - job = data.jobs.ryan_hageman_consulting
+- if job.visible
 
-article.c-job-card data-controller="resume-fold" data-resume-fold-folded-value="#{job.folded}"
-  = partial "partials/resume/job_card_title", locals: {job: job}
+  article.c-job-card data-controller="resume-fold" data-resume-fold-folded-value="#{job.folded}"
+    = partial "partials/resume/job_card_title", locals: {job: job}
 
-  
-  .c-resume__foldable-content data-resume-fold-target="foldable"
-    .c-job-card__summary #{job.summary}
+    
+    .c-resume__foldable-content data-resume-fold-target="foldable"
+      .c-job-card__summary #{job.summary}
 
-    div data-controller="resume-fold"
-      div(class="c-resume__fold-toggle 
-                 c-job-card__client-list-title"
-          data-resume-fold-target="foldToggle" 
-          data-action="click->resume-fold#toggleFold")
-        | Happy Clients:
+      div data-controller="resume-fold"
+        div(class="c-resume__fold-toggle 
+                   c-job-card__client-list-title"
+            data-resume-fold-target="foldToggle" 
+            data-action="click->resume-fold#toggleFold")
+          | Happy Clients:
 
-      ul(class="c-resume__foldable-content 
-                c-job-card__client-list
-                c-job-card__bullet-list--foldable" 
-         data-resume-fold-target="foldable")
+        ul(class="c-resume__foldable-content 
+                  c-job-card__client-list
+                  c-job-card__bullet-list--foldable" 
+           data-resume-fold-target="foldable")
 
-         - job.clients.each do |client|
-           li.c-job-card__bullet #{resume_link_to(client)}
+           - job.clients.each do |client|
+             li.c-job-card__bullet #{resume_link_to(client)}
 
-    .c-job-card__tech-list #{tech_list_for(job)}
+      .c-job-card__tech-list #{tech_list_for(job)}
 
-    ul.c-job-card__bullet-list
-      - job.resume_bullets.each do |bullet|
-        li.c-job-card__bullet #{bullet}
+      ul.c-job-card__bullet-list
+        - job.resume_bullets.each do |bullet|
+          li.c-job-card__bullet #{bullet}

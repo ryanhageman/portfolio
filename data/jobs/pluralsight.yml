@@ -5,6 +5,7 @@ job_title: Instructor
 start_date: 2024-09
 end_date: 
 folded: false
+visible: true
 
 summary: I teach a mix of practical, hands-on skills and theory in Ruby on Rails, React, Node, JavaScript, TypeScript, and general web development.
 
