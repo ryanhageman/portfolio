@@ -12,5 +12,4 @@
       span.c-job-card__time-worked< #{time_worked_at(job)}
 
   .c-job-card__logo-container
-    -if job.logo
-      = image_tag "client-logos/#{job.logo}", alt: "#{job.company} Logo", class: "c-job-card__logo"
+    | #{resume_logo_for(job)}

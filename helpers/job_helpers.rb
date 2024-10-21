@@ -39,6 +39,13 @@ module JobHelpers
     end
   end
 
+  def resume_logo_for(job)
+    return if job.logo.blank?
+    return logo_link_for(job) if job.website
+
+    logo_for(job)
+  end
+
   private
 
   def date_from(string)
@@ -49,5 +56,17 @@ module JobHelpers
 
   def no_date?(date)
     date.nil? || date == 0 || date == "0"
+  end
+
+  def logo_for(job)
+    image_tag "client-logos/#{job.logo}",
+      alt: "#{job.company} Logo",
+      class: "c-job-card__logo"
+  end
+
+  def logo_link_for(job)
+    link_to job.website do
+      logo_for(job)
+    end
   end
 end
