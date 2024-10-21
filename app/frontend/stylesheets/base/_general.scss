@@ -2,4 +2,7 @@ body {
   background: var(--palette--surface-1);
   font-family: var(--font--body);
   color: var(--font--color-primary);
+  background-image: linear-gradient(to left,
+      var(--palette--surface-dark-on-dark),
+      rgba(0, 0, 0, 0));
 }
