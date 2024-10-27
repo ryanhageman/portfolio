@@ -5,7 +5,7 @@ Back-End:
       - name: Ruby on Rails
         tag: rails
       - name: Sinatra
-        tag: ruby
+        tag: sinatra
   - name: JavaScript
     tag: javascript
     frameworks:
@@ -63,6 +63,8 @@ Styling:
         tag: postcss
       - name: Sass
         tag: sass
+  - name: Styled Components
+    tag: styled_components
   - name: Tailwind
     tag: tailwind
   - name: Bootstrap

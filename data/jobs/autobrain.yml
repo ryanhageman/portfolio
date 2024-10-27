@@ -25,3 +25,18 @@ resume_bullets:
   - Enhanced a Ruby on Rails-based application that transforms standard vehicles into smart cars through a device connected to the OBD port, providing real-time data and diagnostics.
   - Worked with Webview to ensure the application delivered a native-like experience on iOS and Android platforms, facilitating its availability through app stores.
   - Dedicated to refining the application's functionality and user interface, I identified and resolved software issues, and added new features to enhance performance and user engagement.
+
+tags:
+  - ruby
+  - rails
+  - javascript
+  - api
+  - html
+  - css
+  - sass
+  - minitest
+  - postgresql
+  - webview
+  - git
+  - github
+

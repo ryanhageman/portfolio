@@ -42,18 +42,30 @@ classes:
       - Led an intensive 10-week course designed to immerse students in the fundamentals of full-stack web development, covering key technologies such as React, JavaScript, AWS, Firebase, HTML, and CSS.
 
 tags:
-  - rails
   - ruby
-  - rspec
-  - capybara
+  - rails
+  - sintatra
   - javascript
+  - node
+  - api
   - react
   - html
-  - sass
+  - slim
+  - haml
+  - erb
   - css
+  - sass
+  - bootstrap
+  - rspec
+  - minitest
+  - postgresql
+  - mysql
+  - redis
+  - firebase
+  - circle_ci
+  - travis_ci
+  - aws
+  - heroku
   - git
   - github
-  - aws
-  - travis_ci
-  - circle_ci
 

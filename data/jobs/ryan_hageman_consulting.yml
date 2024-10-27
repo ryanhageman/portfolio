@@ -48,21 +48,53 @@ clients:
 tags:
   - ruby
   - rails
+  - sinatra
   - react
   - stimulus
   - javascript
+  - typescript
   - node
+  - elixir
+  - phoenix
+  - python
+  - django
+  - ai
+  - api
+  - graphql_api
   - html
+  - slim
+  - haml
+  - liquid
+  - erb
+  - ejs
+  - handlebars
+  - css
   - sass
   - postcss
-  - postgresql
-  - mysql
-  - aws
-  - git
-  - github
+  - styled_components
+  - bootstrap
   - rspec
   - minitest
   - jest
   - cypress
-  - liquid
+  - postgresql
+  - mysql
+  - graphql
+  - redis
+  - firebase
+  - github_actions
+  - circle_ci
+  - travis_ci
+  - vite
+  - esbuild
+  - import_maps
+  - webpack
+  - gulp
+  - grunt
+  - aws
+  - heroku
+  - docker
+  - git
+  - github
+  - certified_scrum_master
 

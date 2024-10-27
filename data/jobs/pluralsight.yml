@@ -16,6 +16,7 @@ stack:
   - JavaScript
   - TypeScript
   - Node
+  - Stimulus
   - HTML
   - CSS
   - Sass 
@@ -29,15 +30,27 @@ stack:
 tags:
   - ruby
   - rails
-  - react
   - javascript
   - typescript
   - node
+  - react
+  - stimulus
   - html
+  - css
   - sass 
   - postcss
+  - bootstrap
+  - rspec
+  - minitest
+  - cypress
   - postgresql
   - mysql
   - vite
   - git
   - github
+  - api
+  - slim
+  - haml
+  - liquid
+  - erb
+  - ejs

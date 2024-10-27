@@ -36,20 +36,35 @@ resume_bullets:
 tags:
   - ruby 
   - rails
-  - react
   - javascript
   - typescript
   - node
+  - python
+  - ai
+  - api
+  - graphql_api
+  - react
+  - angular
   - html
+  - erb
+  - css
+  - postcss
+  - styled_components
   - sass
   - tailwind
-  - material-ui
-  - docker
+  - material_ui
+  - rspec
+  - minitest
+  - jest
   - postgresql
   - mysql
+  - graphql
+  - esbuild
+  - aws
+  - azure_devops
+  - docker
   - git
   - github
   - gitlab
-  - azure_devops
-  - jira
+  - azure_repos
 

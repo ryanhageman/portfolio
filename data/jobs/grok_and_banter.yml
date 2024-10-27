@@ -35,16 +35,18 @@ tags:
   - rails
   - javascript
   - node
-  - hapi
-  - kendo
-  - html
-  - sass
   - ai
-  - opencv
-  - docker
-  - rabbitmq
+  - api
+  - html
+  - erb
+  - ejs
+  - handlebars
+  - css
+  - bootstrap
+  - sass
   - postgresql
   - aws
+  - docker
   - git
   - github
 
