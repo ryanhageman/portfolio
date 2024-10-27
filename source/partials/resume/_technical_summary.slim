@@ -1,0 +1,6 @@
+ul.c-resume__bullet-list
+  - data.resume.technical_summary.each do |group, items|
+    li.c-resume__bullet
+      span.c-resume__bullet-title> #{group}:
+
+      = tech_summary_group_list(items)

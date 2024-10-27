@@ -7,12 +7,17 @@ testimonials:
   title: What Folks Are Saying
   url: /recommendations.html
   visible: true
-  
+
 about:
   title: About
   url: /about.html
   visible: true
 
+resume:
+  title: Resume
+  url: /resume.html
+  visible: true
+  
 blog:
   title: Blog
   url: https://furiouslycurious.com

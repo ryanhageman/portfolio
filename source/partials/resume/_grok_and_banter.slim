@@ -1,0 +1,18 @@
+- job = data.jobs.grok_and_banter
+- if job.visible
+
+  article(class="c-job-card" 
+          data-controller="resume-fold" 
+          data-resume-filter-target="job"
+          data-resume-fold-folded-value="#{job.folded}"
+          data-tags="[#{job.tags.join(', ')}]")
+    = partial "partials/resume/job_card_title", locals: {job: job}
+
+    .c-resume__foldable-content data-resume-fold-target="foldable"
+      .c-job-card__summary #{job.summary}
+      
+      .c-job-card__tech-list #{tech_list_for(job)}
+
+      ul.c-job-card__bullet-list
+        - job.resume_bullets.each do |bullet|
+          li.c-job-card__bullet #{bullet}

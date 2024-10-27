@@ -1,0 +1,139 @@
+Back-End:
+  - name: Ruby
+    tag: ruby
+    frameworks:
+      - name: Ruby on Rails
+        tag: rails
+      - name: Sinatra
+        tag: sinatra
+  - name: JavaScript
+    tag: javascript
+    frameworks:
+      - name: Node
+        tag: node
+      - name: TypeScript
+        tag: typescript
+  - name: Elixir
+    tag: elixir
+    frameworks:
+      - name: Phoenix
+        tag: elixir
+  - name: Python
+    tag: python
+    frameworks:
+      - name: Django
+        tag: python
+  - name: AI Machine Learning / Computer Vision
+    tag: ai
+  - name: RESTful APIs
+    tag: api
+  - name: GraphQL APIs
+    tag: graphql_api
+
+Front-End:
+  - name: JavaScript
+    tag: javascript
+    frameworks:
+      - name: React
+        tag: react
+      - name: Angular
+        tag: angular
+      - name: Stimulus
+        tag: stimulus
+  - name: HTML
+    tag: html
+  - name: Slim
+    tag: slim
+  - name: Haml
+    tag: haml
+  - name: Liquid
+    tag: liquid
+  - name: ERB
+    tag: erb
+  - name: EJS
+    tag: ejs
+  - name: Handlebars
+    tag: handlebars
+
+Styling:
+  - name: CSS
+    tag: css
+    frameworks:
+      - name: PostCSS
+        tag: postcss
+      - name: Sass
+        tag: sass
+  - name: Styled Components
+    tag: styled_components
+  - name: Tailwind
+    tag: tailwind
+  - name: Bootstrap
+    tag: bootstrap
+  - name: Material UI
+    tag: material_ui
+
+Testing:
+  - name: RSpec
+    tag: rspec
+  - name: MiniTest
+    tag: minitest
+  - name: Jest
+    tag: jest
+  - name: Cypress
+    tag: cypress
+
+Database:
+  - name: PostgreSQL
+    tag: postgresql
+  - name: MySQL
+    tag: mysql
+  - name: GraphQL
+    tag: graphql
+  - name: Redis
+    tag: redis
+  - name: Firebase
+    tag: firebase
+
+Build Tools:
+  - name: GitHub Actions
+    tag: github_actions
+  - name: CircleCI
+    tag: circle_ci
+  - name: TravisCI
+    tag: travis_ci
+  - name: Vite
+    tag: vite
+  - name: ESbuild
+    tag: esbuild
+  - name: Import Maps
+    tag: import_maps
+  - name: Webpack
+    tag: webpack
+  - name: Gulp
+    tag: gulp
+  - name: Grunt
+    tag: grunt
+
+Cloud & Containerization:
+  - name: AWS
+    tag: aws
+  - name: Azure DevOps
+    tag: azure_devops
+  - name: Heroku
+    tag: heroku
+  - name: Docker
+    tag: docker
+
+Version Control:
+  - name: Git
+    tag: git
+  - name: GitHub
+    tag: github
+  - name: GitLabs
+    tag: gitlabs
+  - name: Azure Repos
+    tag: azure_repos
+
+Agile Project Management:
+  - name: Certified Scrum Master
+    tag: certified_scrum_master
