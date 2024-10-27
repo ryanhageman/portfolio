@@ -32,3 +32,39 @@ resume_bullets:
   - Our team built a Ruby on Rails app to replace an older system, improving the interface and speed to access tumor DNA mapping data, which improved the creation of personalized cancer treatments.
   - Led the development of a React-based Progressive Web App (PWA) for iPad, giving the client’s marketing team full offline functionality.
   - Played a pivotal role in the team that modernized a Medicare provider’s website with React/Next.js and TypeScript, enhancing usability and satisfaction, while mentoring junior developers.
+
+tags:
+  - ruby 
+  - rails
+  - javascript
+  - typescript
+  - node
+  - python
+  - ai
+  - api
+  - graphql_api
+  - react
+  - angular
+  - html
+  - erb
+  - css
+  - postcss
+  - styled_components
+  - sass
+  - tailwind
+  - material_ui
+  - rspec
+  - minitest
+  - jest
+  - postgresql
+  - mysql
+  - graphql
+  - esbuild
+  - aws
+  - azure_devops
+  - docker
+  - git
+  - github
+  - gitlab
+  - azure_repos
+

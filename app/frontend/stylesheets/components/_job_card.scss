@@ -2,6 +2,10 @@
   margin-inline: var(--size-6);
   margin-bottom: var(--size-6);
 
+  &.is-hidden {
+    display: none;
+  }
+
   &__title {
     display: flex;
     justify-content: space-between;
