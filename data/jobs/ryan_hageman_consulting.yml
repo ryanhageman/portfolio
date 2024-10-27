@@ -10,10 +10,10 @@ visible: true
 summary: Do you need a full featured custom solution? Maybe you want to add a new feature. With a custom, Agile process, I take clients from their wish list to custom software.
 
 stack:
+  - Ruby
   - Ruby on Rails
   - React
   - Stimulus
-  - Ruby
   - JavaScript
   - Node
   - HTML
@@ -44,3 +44,25 @@ clients:
   - topology
   - algiers_investigations
   - cocomama
+
+tags:
+  - ruby
+  - rails
+  - react
+  - stimulus
+  - javascript
+  - node
+  - html
+  - sass
+  - postcss
+  - postgresql
+  - mysql
+  - aws
+  - git
+  - github
+  - rspec
+  - minitest
+  - jest
+  - cypress
+  - liquid
+

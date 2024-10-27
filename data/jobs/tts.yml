@@ -40,3 +40,20 @@ classes:
     title: Lead Instructor
     bullets: 
       - Led an intensive 10-week course designed to immerse students in the fundamentals of full-stack web development, covering key technologies such as React, JavaScript, AWS, Firebase, HTML, and CSS.
+
+tags:
+  - rails
+  - ruby
+  - rspec
+  - capybara
+  - javascript
+  - react
+  - html
+  - sass
+  - css
+  - git
+  - github
+  - aws
+  - travis_ci
+  - circle_ci
+

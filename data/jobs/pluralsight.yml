@@ -10,12 +10,14 @@ visible: true
 summary: I teach a mix of practical, hands-on skills and theory in Ruby on Rails, React, Node, JavaScript, TypeScript, and general web development.
 
 stack: 
+  - Ruby
   - Ruby on Rails
   - React
   - JavaScript
   - TypeScript
   - Node
   - HTML
+  - CSS
   - Sass 
   - PostCSS
   - PostgreSQL
@@ -24,3 +26,18 @@ stack:
   - Git
   - GitHub
 
+tags:
+  - ruby
+  - rails
+  - react
+  - javascript
+  - typescript
+  - node
+  - html
+  - sass 
+  - postcss
+  - postgresql
+  - mysql
+  - vite
+  - git
+  - github

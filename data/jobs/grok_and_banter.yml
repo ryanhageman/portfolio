@@ -29,3 +29,22 @@ stack:
 resume_bullets:
   - Our team developed and refined a cutting-edge device using Node and OpenCV, equipped with AI computer vision, to measure real-world ad engagement, tracking passerby attention and interaction.
   - Collaborated to engineer the Ruby on Rails client portal and API, providing users with intuitive access to analytics similar to those of online ads, for their physical advertisements. This included data on views, engagements, and overall ad effectiveness.
+
+tags:
+  - ruby
+  - rails
+  - javascript
+  - node
+  - hapi
+  - kendo
+  - html
+  - sass
+  - ai
+  - opencv
+  - docker
+  - rabbitmq
+  - postgresql
+  - aws
+  - git
+  - github
+
