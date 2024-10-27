@@ -29,7 +29,10 @@ title: Ryan Hageman | Resume
          data-action="click->resume-fold#toggleFold")
         | Technical Summary
 
+
       .c-resume__foldable-content data-resume-fold-target="foldable"
+        .c-resume__instructions Click on the tech name to filter matching experience 
+
         == partial "partials/resume/technical_summary"
 
     / ╭───────────────────────────────────────────────────────────╮
@@ -49,6 +52,9 @@ title: Ryan Hageman | Resume
         == partial "partials/resume/grok_and_banter"
         == partial "partials/resume/tech_talent_south"
         == partial "partials/resume/autobrain"
+
+        h3.c-resume__experience-category Medical
+
         == partial "partials/resume/film_medic"
         == partial "partials/resume/tulane"
         == partial "partials/resume/amed"
