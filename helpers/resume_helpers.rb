@@ -6,7 +6,9 @@ module ResumeHelpers
   def tech_summary_element(item)
     content_tag(:span,
       item.name,
+      class: "c-resume__tech-summary-element",
       data: {action: "click->resume-filter#show",
+             resume_filter_target: "link",
              resume_filter_tag_value: item.tag})
   end
 

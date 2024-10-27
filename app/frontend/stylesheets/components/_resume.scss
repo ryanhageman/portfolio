@@ -55,6 +55,21 @@
     }
   }
 
+  &__tech-summary-element {
+    &:hover {
+      color: var(--font--color-link);
+      cursor: pointer;
+    }
+
+    &.is-highlighted {
+      background-color: var(--palette--surface-dark);
+      color: var(--font--color-primary--light);
+      border: var(--border-size-2) solid var(--cyan-6);
+      border-radius: var(--radius-3);
+      padding: var(--size-2);
+    }
+  }
+
   &__experience-section {
     margin-bottom: var(--size-4);
     margin-left: var(--size-3);
