@@ -82,6 +82,9 @@ export default class extends Controller {
   }
 
   _tagsFor(job) {
-    return job.dataset.tags
+    const tagString = job.dataset.tags
+    const tagArray = tagString.replace(/[\[\]]/g, "").split(", ")
+
+    return tagArray
   }
 }
