@@ -1,25 +1,87 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static targets = ['link']
+  static targets = ['link', 'job']
 
-  show(event) {
-    const element = event.currentTarget
+  filter(event) {
+    const item = event.currentTarget
 
-    this.highlightItem(element)
-  }
+    if (this._isAlreadyHighlighted(item)) {
+      this._clearAllFilters()
+      return
+    }
 
-  highlightItem(item) {
-    this.linkTargets.forEach((element) => {
-      element.classList.remove('is-highlighted')
-    })
-
-    item.classList.add('is-highlighted')
+    this._highlight(item)
+    this._showFilteredJobs(item)
   }
 
   // private
 
-  _tagValueOf(element) {
-    return element.dataset.resumeFilterTagValue
+  // ── highlights ──────────────────────────────────────────────────────
+
+  _highlight(item) {
+    this._clearAllHighlights()
+    item.classList.add('is-highlighted')
+  }
+
+  _clearHighlight(item) {
+    item.classList.remove('is-highlighted')
+  }
+
+  _clearAllHighlights() {
+    this.linkTargets.forEach((item) => this._clearHighlight(item))
+  }
+
+  _isAlreadyHighlighted(item) {
+    return item.classList.contains('is-highlighted')
+  }
+
+  // ── filters ─────────────────────────────────────────────────────────
+
+  _showFilteredJobs(item) {
+    this._hideAllTheJobs()
+
+    this.jobTargets.forEach((job) => {
+      if (this._jobHasMatchingTag(job, item)) {
+        this._showJob(job)
+      }
+    })
+  }
+
+  _clearAllFilters() {
+    this._clearAllHighlights()
+    this._showAllTheJobs()
+  }
+
+  _jobHasMatchingTag(job, item) {
+    return this._tagsFor(job).includes(this._tagValueOf(item))
+  }
+
+  // ── visibility ──────────────────────────────────────────────────────
+
+  _showAllTheJobs() {
+    this.jobTargets.forEach((job) => {
+      this._showJob(job)
+    })
+  }
+
+  _showJob(job) {
+    job.classList.remove('is-hidden')
+  }
+
+  _hideAllTheJobs() {
+    this.jobTargets.forEach((job) => {
+      job.classList.add('is-hidden')
+    })
+  }
+
+  // ── getters ─────────────────────────────────────────────────────────
+
+  _tagValueOf(item) {
+    return item.dataset.resumeFilterTagValue
+  }
+
+  _tagsFor(job) {
+    return job.dataset.tags
   }
 }

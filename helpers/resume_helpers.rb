@@ -7,7 +7,7 @@ module ResumeHelpers
     content_tag(:span,
       item.name,
       class: "c-resume__tech-summary-element",
-      data: {action: "click->resume-filter#show",
+      data: {action: "click->resume-filter#filter",
              resume_filter_target: "link",
              resume_filter_tag_value: item.tag})
   end
