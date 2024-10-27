@@ -1,7 +1,13 @@
+:root {
+  --footer__padding: var(--size-px-3);
+  --footer__font-size: var(--font-size-1);
+}
+
 .c-footer {
   display: flex;
   justify-content: flex-end;
-  padding: var(--size-px-3);
+  padding: var(--footer__padding);
   background: var(--palette--surface-dark);
   color: var(--font--color-primary--light);
+  font-size: var(--footer__font-size);
 }

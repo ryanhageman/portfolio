@@ -1,0 +1,5 @@
+ul.c-resume__bullet-list
+  - data.resume.technical_summary.each do |section_name, bullets|
+    li.c-resume__bullet
+      span.c-resume__bullet-title> #{section_name}:
+      | #{bullets.join(", ")}

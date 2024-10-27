@@ -1,0 +1,27 @@
+company: Autobrain
+website: https://www.autobrain.com/
+logo: autobrain-logo.png
+job_title: Software Engineer
+start_date: 2016-08
+end_date: 2016-09
+folded: true
+visible: false
+
+summary: Your car should be a smart car. It should definitely be able to talk to your phone. Autobrain uses a customized OBD-II device to give you features like Emergency Roadside Assistance, Car Finder, Alerts, Trip Reports, and Diagnostics.
+
+stack:
+  - Ruby on Rails
+  - Ruby
+  - Minitest
+  - JavaScript
+  - HTML
+  - Sass
+  - CSS
+  - Webview
+  - Git
+  - GitHub
+
+resume_bullets:
+  - Enhanced a Ruby on Rails-based application that transforms standard vehicles into smart cars through a device connected to the OBD port, providing real-time data and diagnostics.
+  - Worked with Webview to ensure the application delivered a native-like experience on iOS and Android platforms, facilitating its availability through app stores.
+  - Dedicated to refining the application's functionality and user interface, I identified and resolved software issues, and added new features to enhance performance and user engagement.

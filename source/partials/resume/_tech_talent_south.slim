@@ -1,0 +1,23 @@
+- job = data.jobs.tts
+- if job.visible
+
+  article.c-job-card data-controller="resume-fold" data-resume-fold-folded-value="#{job.folded}"
+    = partial "partials/resume/job_card_title", locals: {job: job}
+    
+    .c-resume__foldable-content data-resume-fold-target="foldable"
+      .c-job-card__summary #{job.summary}
+
+      .c-job-card__tech-list #{tech_list_for(job)}
+
+      - job.classes.each do |topic|
+        div data-controller="resume-fold"
+          div(class="c-job-card__class-title c-resume__fold-toggle"
+              data-resume-fold-target="foldToggle"
+              data-action="click->resume-fold#toggleFold")
+            | #{topic.name} - #{topic.title}
+
+          ul(class="c-job-card__bullet-list--foldable 
+                    c-resume__foldable-content" 
+             data-resume-fold-target="foldable")        
+            - topic.bullets.each do |bullet|
+              li.c-job-card__bullet #{bullet}
