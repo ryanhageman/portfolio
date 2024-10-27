@@ -40,6 +40,8 @@ Front-End:
         tag: angular
       - name: Stimulus
         tag: stimulus
+  - name: HTML
+    tag: html
   - name: Slim
     tag: slim
   - name: Haml
@@ -97,6 +99,8 @@ Build Tools:
     tag: circle_ci
   - name: TravisCI
     tag: travis_ci
+  - name: Vite
+    tag: vite
   - name: ESbuild
     tag: esbuild
   - name: Import Maps
