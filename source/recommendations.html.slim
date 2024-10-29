@@ -5,19 +5,18 @@ title: Ryan Hageman | Recommendations
 .o-container.o-container--centered
   h1.o-page__main-heading What Folks Are Saying
 
-  - data.recommendations.sort_by { |_file, person| person.section }.each do |_file, person|
+  - data.recommendations.display_order.each do |person|
+    - person_data = data.recommendations[person]
     .c-recommendation__card
-      = link_to person.profile_url, class: "c-recommendation__image-link" , target: "_blank" do
-        img.c-recommendation__image src=person.profile_pic_src alt="#{person.name} Profile Photo"
+      .c-recommendation__quote
+        - person_data.recommendation.split("\n").each do |paragraph|
+          p = paragraph
 
-      .c-recommendation__name
-        h2.c-recommendation__heading = person.name 
-        
-        .c-recommendation__job-title
-          = person.title
-          br
-          span.c-recommendation__company = person.company
+        = link_to person_data.profile_url, class: "c-recommendation__person", target: "_blank" do
+          h2.c-recommendation__name = person_data.name 
+          
+          .c-recommendation__job-title
+            = person_data.title
+            br
+            span.c-recommendation__company = person_data.company
 
-        .c-recommendation__quote
-          - person.recommendation.split("\n").each do |paragraph|
-            p = paragraph

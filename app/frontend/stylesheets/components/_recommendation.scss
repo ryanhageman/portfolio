@@ -1,12 +1,9 @@
 .c-recommendation {
   &__card {
-    display: grid;
-    grid-template-columns: var(--size-px-12) 1fr;
     margin-bottom: var(--size-px-7);
 
     @include phone-or-smaller {
-      grid-template-columns: var(--size-px-11) 1fr;
-      margin-right: var(--size-px-4);
+      margin-inline: var(--size-px-4);
     }
   }
 
@@ -39,36 +36,46 @@
     }
   }
 
+  &__person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: calc(var(--size-px-3) * -1);
+  }
+
   &__name {
     font-family: var(--font--heading);
-    font-size: var(--font-size-6);
+    font-size: var(--font-size-4);
+    color: var(--font--color-secondary);
+    max-width: 100%;
 
-    @include phone-or-smaller {
-      font-size: var(--font-size-5);
+    &:hover {
+      color: var(--font--color-link);
     }
   }
 
   &__job-title {
     font-family: var(--font--heading);
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-1);
     font-variant: small-caps;
     color: var(--font--color-secondary);
     margin-block: var(--size-px-1) var(--size-px-3);
     line-height: var(--font-lineheight-0);
 
-    @include phone-or-smaller {
-      font-size: var(--font-size-2);
+    &:hover {
+      color: var(--font--color-link);
     }
   }
 
   &__company {
     font-family: var(--font--heading);
-    font-size: var(--font-size-2);
+    font-size: var(--font-size-1);
     font-variant: small-caps;
     color: var(--font--color-secondary);
 
-    @include phone-or-smaller {
-      font-size: var(--font-size-1);
+    &:hover {
+      color: var(--font--color-link);
     }
   }
 
