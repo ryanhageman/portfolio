@@ -1,7 +1,7 @@
 home: 
   title: Home
   url: /
-  visible: false
+  visible: true
 
 testimonials:
   title: What Folks Are Saying
